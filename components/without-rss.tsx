@@ -14,17 +14,22 @@ export const WithoutRss: React.FC = () => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button size="sm" variant="outline" className="py-1 text-xs font-semibold cursor-pointer"> 
+        <Button
+          size="sm"
+          variant="outline"
+          className="py-1 text-xs font-semibold cursor-pointer"
+        >
           Connect RSS feed
         </Button>
       </DialogTrigger>
       <DialogContent className="max-h-[80vh] overflow-y-auto md:max-w-[60vw] md:w-[60vw] w-full">
         <DialogHeader>
           <DialogTitle>No RSS feed found</DialogTitle>
-          <p className="text-sm text-muted-foreground">Add a RSS feed to your registry to enable this feature.</p>
+          <p className="text-sm text-muted-foreground">
+            Add a RSS feed to your registry to enable this feature.
+          </p>
         </DialogHeader>
         <div className="mt-4 max-w-full overflow-x-auto">
-          <p className="mt-1">The RSS is refreshed once an hour, meaning your changes might not appear right away</p>
           <CodeBlock
             code="npm install @wandry/analytics-sdk"
             containerClassName="my-4"

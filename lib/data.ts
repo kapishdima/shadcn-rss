@@ -2,32 +2,33 @@ import { unstable_cache } from "next/cache";
 import { XMLParser } from "fast-xml-parser";
 
 import { Registry, RssFeed, RssItem } from "@/types";
-import { CACHE_TTL, REGISTRIES_URL, RSS_URLS, STILL_UPDATED_DAYS } from "./config";
+import {
+  CACHE_TTL,
+  REGISTRIES_URL,
+  RSS_URLS,
+  STILL_UPDATED_DAYS,
+} from "./config";
 import { isWithinInterval, max, sub } from "date-fns";
 import { directories } from "./directory";
 
-const getRegistryRssUrl = unstable_cache(
-  async (baseUrl: string): Promise<string | null> => {
-    for (const rssPath of RSS_URLS) {
-      try {
-        const testUrl = new URL(rssPath, baseUrl).toString();
-        const response = await fetch(testUrl, {
-          method: "HEAD",
-          signal: AbortSignal.timeout(2000),
-        });
+const getRegistryRssUrl = async (baseUrl: string): Promise<string | null> => {
+  for (const rssPath of RSS_URLS) {
+    try {
+      const testUrl = new URL(rssPath, baseUrl).toString();
+      const response = await fetch(testUrl, {
+        method: "HEAD",
+        signal: AbortSignal.timeout(2000),
+      });
 
-        if (response.ok) {
-          return testUrl;
-        }
-      } catch (error) {
-        continue;
+      if (response.ok) {
+        return testUrl;
       }
+    } catch (error) {
+      continue;
     }
-    return null;
-  },
-  ["registry-rss-url-discovery"],
-  { revalidate: 604800 } // Cache URL discovery for 1 week
-);
+  }
+  return null;
+};
 
 const findAndFetchRssFeed = async (
   baseUrl: string
