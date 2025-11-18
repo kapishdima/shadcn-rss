@@ -15,6 +15,16 @@ import {
 } from "@/components/ui/item";
 import { RegistryUpdate } from "./registry-update";
 import { WithoutRss } from "./without-rss";
+import { Field } from "./ui/field";
+import {
+  InputGroup,
+  InputGroupAddon,
+  InputGroupButton,
+  InputGroupInput,
+} from "./ui/input-group";
+import { Search, X } from "lucide-react";
+import { debounce, useQueryState } from "nuqs";
+import { findRegistry } from "@/lib/data";
 
 type RegistriesListProps = {
   registries: Registry[];
@@ -23,11 +33,41 @@ type RegistriesListProps = {
 export const RegistriesList: React.FC<RegistriesListProps> = ({
   registries,
 }) => {
+  const [query, setQuery] = useQueryState("q", {
+    defaultValue: "",
+    limitUrlUpdates: debounce(250),
+  });
+
   return (
     <div className="mt-6">
-      {/* <SearchDirectory /> */}
+      <Field>
+        <InputGroup>
+          <InputGroupAddon>
+            <Search />
+          </InputGroupAddon>
+          <InputGroupInput
+            placeholder="Search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+          />
+          <InputGroupAddon
+            align="inline-end"
+            data-disabled={!query.length}
+            className="data-[disabled=true]:hidden"
+          >
+            <InputGroupButton
+              aria-label="Clear"
+              title="Clear"
+              size="icon-xs"
+              onClick={() => setQuery(null)}
+            >
+              <X />
+            </InputGroupButton>
+          </InputGroupAddon>
+        </InputGroup>
+      </Field>
       <ItemGroup className="my-8">
-        {registries.map((registry, index) => (
+        {findRegistry(query, registries).map((registry, index) => (
           <React.Fragment key={index}>
             <Item className="group/item relative gap-6 px-0">
               <ItemMedia

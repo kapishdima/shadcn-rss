@@ -2,7 +2,8 @@ import { XMLParser } from "fast-xml-parser";
 
 import { Registry, RssFeed, RssItem } from "@/types";
 import { REGISTRIES_URL, RSS_URLS, STILL_UPDATED_DAYS } from "./config";
-import { eachDayOfInterval, isWithinInterval, max, sub } from "date-fns";
+import { isWithinInterval, max, sub } from "date-fns";
+import { directories } from "./directory";
 
 const findAndFetchRssFeed = async (
   baseUrl: string
@@ -36,8 +37,8 @@ const findLatestRegistryItemUpdated = (
   return registryItems
     .filter((item) =>
       isWithinInterval(new Date(item.pubDate), {
-        start: new Date(),
-        end: sub(new Date(), { days: STILL_UPDATED_DAYS }),
+        start: sub(new Date(), { days: STILL_UPDATED_DAYS }),
+        end: new Date(),
       })
     )
     .toSorted(sortRegistryItemsByDate);
@@ -96,6 +97,30 @@ export const collectRssFeed = async (): Promise<Registry[]> => {
   return sortRegistriesByDate(registriesWithRss);
 };
 
+export const findRegistry = (query: string, registries: Registry[]) => {
+  return registries.filter((registry) =>
+    registry.searchKeywords?.some((keyword) =>
+      keyword.includes(normalizeQuery(query))
+    )
+  );
+};
+
+const normalizeQuery = (query: string) =>
+  query.toLowerCase().replaceAll(" ", "").replaceAll("@", "");
+
 export const getRegistries = async (): Promise<Registry[]> => {
-  return fetch(REGISTRIES_URL).then((res) => res.json());
+  return directories.map((dir) => ({
+    ...dir,
+    searchKeywords: [normalizeQuery(dir.name), normalizeQuery(dir.description)],
+  }));
+
+  // TODO: Github send 404
+  // try {
+  //   const res = await fetch(REGISTRIES_URL);
+  //   if (!res.ok) throw new Error("Failed to fetch registries");
+  //   return await res.json();
+  // } catch (error) {
+  //   console.error("Failed to fetch registries, using mock data:", error);
+  //   return [];
+  // }
 };

@@ -20,4 +20,4 @@ export const RSS_URLS = [
   "/registry/atom.xml",
 ];
 
-export const STILL_UPDATED_DAYS = 30;
+export const STILL_UPDATED_DAYS = 10;

@@ -7,6 +7,7 @@ import {
   DialogTrigger,
 } from "./ui/dialog";
 import { Badge } from "./ui/badge";
+import { CodeBlock } from "./code-block";
 
 export const WithoutRss: React.FC = () => {
   return (
@@ -22,12 +23,12 @@ export const WithoutRss: React.FC = () => {
         </DialogHeader>
         <div className="mt-4 max-w-full overflow-x-auto">
           <p>Add a RSS feed to your registry to enable this feature.</p>
-          <pre className="bg-muted p-4 rounded-md mt-3 block max-w-full overflow-x-auto">
-            <code className="text-sm">npm install @wandry/analytics-sdk</code>
-          </pre>
-          <pre className="bg-muted p-4 rounded-md mt-3 block max-w-full overflow-x-auto">
-            <code className="text-sm">
-              {`import { generateRegistryRssFeed } from "@wandry/analytics-sdk";
+          <CodeBlock
+            code="npm install @wandry/analytics-sdk"
+            containerClassName="my-4"
+          />
+          <CodeBlock
+            code={`import { generateRegistryRssFeed } from "@wandry/analytics-sdk";
 import type { NextRequest } from "next/server";
 
 export const revalidate = 3600;
@@ -64,9 +65,9 @@ export async function GET(request: NextRequest) {
         "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400",
     },
   });
-}`}
-            </code>
-          </pre>
+}
+            `}
+          />
         </div>
       </DialogContent>
     </Dialog>
