@@ -21,4 +21,4 @@ export const RSS_URLS = [
 ];
 
 export const STILL_UPDATED_DAYS = 10;
-export const CACHE_TTL = 60 * 60 * 24 // 1 day
+export const CACHE_TTL = 60; // 1 day
