@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 
+import { Analytics } from "@vercel/analytics/next";
+
 import "./globals.css";
 import { Suspense } from "react";
 
@@ -34,6 +36,7 @@ export default function RootLayout({
         >
           <NuqsAdapter>{children}</NuqsAdapter>
         </body>
+        <Analytics />
       </html>
     </Suspense>
   );
