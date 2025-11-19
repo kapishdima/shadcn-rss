@@ -94,6 +94,7 @@ const enrichRegistryWithRssData = async (
 
   return {
     ...registry,
+    hasFeed: Boolean(rss && rss.rss && rss.rss.channel),
     feed: rss?.rss?.channel,
     latestItems,
     updatedAt,

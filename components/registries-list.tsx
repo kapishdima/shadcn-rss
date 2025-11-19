@@ -78,11 +78,11 @@ export const RegistriesList: React.FC<RegistriesListProps> = ({
               <ItemContent>
                 <ItemActions className="relative z-10 self-start md:hidden flex mb-2">
                   <RegistryUpdate registry={registry} />
-                  {!registry.feed && <WithoutRss />}
+                  {!registry.hasFeed && <WithoutRss />}
                 </ItemActions>
                 <ItemTitle>
                   {registry.name}{" "}
-                  {!registry.feed && (
+                  {!registry.hasFeed && (
                     <span className="text-xs text-red-600">Without RSS</span>
                   )}
                 </ItemTitle>

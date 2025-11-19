@@ -5,6 +5,7 @@ export type Registry = {
   description: string;
   logo: string;
   searchKeywords?: string[];
+  hasFeed?: boolean;
   feed?: RssChannel | null;
   latestItems?: RssItem[] | null;
   updatedAt?: Date | null;
