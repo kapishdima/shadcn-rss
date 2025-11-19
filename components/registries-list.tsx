@@ -33,6 +33,8 @@ type RegistriesListProps = {
 export const RegistriesList: React.FC<RegistriesListProps> = ({
   registries,
 }) => {
+  console.log("RegistriesList render", registries);
+
   const [query, setQuery] = useQueryState("q", {
     defaultValue: "",
     limitUrlUpdates: debounce(250),
