@@ -41,7 +41,8 @@ const findAndFetchRssFeed = async (
 
   try {
     const response = await fetch(rssUrl, {
-      next: { revalidate: CACHE_TTL },
+      // TODO: Fix caching issue
+      // next: { revalidate: CACHE_TTL },
       signal: AbortSignal.timeout(10000),
     });
 
