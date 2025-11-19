@@ -76,14 +76,23 @@ export const RegistriesList: React.FC<RegistriesListProps> = ({
                 className="*:[svg]:fill-foreground grayscale *:[svg]:size-8"
               />
               <ItemContent>
-                <ItemTitle>{registry.name} {!registry.feed && <span className="text-xs text-red-600">Without RSS</span>}</ItemTitle>
+                <ItemActions className="relative z-10 self-start md:hidden flex mb-2">
+                  <RegistryUpdate registry={registry} />
+                  {!registry.feed && <WithoutRss />}
+                </ItemActions>
+                <ItemTitle>
+                  {registry.name}{" "}
+                  {!registry.feed && (
+                    <span className="text-xs text-red-600">Without RSS</span>
+                  )}
+                </ItemTitle>
                 {registry.description && (
                   <ItemDescription className="max-w-[70%] text-balance">
                     {registry.description}
                   </ItemDescription>
                 )}
               </ItemContent>
-              <ItemActions className="relative z-10 hidden self-start sm:flex">
+              <ItemActions className="relative z-10 self-start md:flex hidden">
                 <RegistryUpdate registry={registry} />
                 {!registry.feed && <WithoutRss />}
               </ItemActions>

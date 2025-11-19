@@ -9,7 +9,7 @@ export default async function Home() {
 
   return (
     <div className="flex min-h-screen items-center justify-center font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-start justify-start py-8 px-16 bg-white dark:bg-black sm:items-start">
+      <main className="flex min-h-screen w-full max-w-3xl flex-col items-start justify-start py-8 md:px-16 px-2 bg-white dark:bg-black sm:items-start">
         <header className="w-full">
           <h1 className="text-xl font-bold leading-tight tracking-tighter flex items-center gap-x-2">
             <AnimateIcon animate loop>
