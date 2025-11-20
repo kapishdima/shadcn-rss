@@ -15,7 +15,7 @@ const getRegistryRssUrl = async (baseUrl: string): Promise<string | null> => {
       const testUrl = new URL(rssPath, baseUrl).toString();
       const response = await fetch(testUrl, {
         method: "HEAD",
-        signal: AbortSignal.timeout(2000),
+        signal: AbortSignal.timeout(5000),
       });
 
       if (response.ok) {
@@ -39,10 +39,8 @@ const findAndFetchRssFeed = async (
 
   try {
     const response = await fetch(rssUrl, {
-      // TODO: Fix caching issue
-      // next: { revalidate: CACHE_TTL },
-      cache: "no-store",
-      signal: AbortSignal.timeout(10000),
+      next: { revalidate: CACHE_TTL },
+      signal: AbortSignal.timeout(15000),
     });
 
     if (!response.ok) {
