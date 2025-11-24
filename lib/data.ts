@@ -19,6 +19,7 @@ const getRegistryRssUrl = async (baseUrl: string): Promise<string | null> => {
       const response = await fetch(testUrl, {
         method: "HEAD",
         signal: AbortSignal.timeout(5000),
+        next: { revalidate: CACHE_TTL },
       });
 
       if (response.ok) {
@@ -31,14 +32,8 @@ const getRegistryRssUrl = async (baseUrl: string): Promise<string | null> => {
   return null;
 };
 
-const findAndFetchRssFeed = async (
-  baseUrl: string
-): Promise<RssFeed | null> => {
+const findAndFetchRssFeed = async (rssUrl: string): Promise<RssFeed | null> => {
   const parser = new XMLParser();
-
-  const rssUrl = await getRegistryRssUrl(baseUrl);
-
-  if (!rssUrl) return null;
 
   try {
     const response = await fetch(rssUrl, {
@@ -86,13 +81,18 @@ const enrichRegistryWithRssData = async (
   const defaultRegistyData = {
     hasFeed: false,
     feed: null,
+    rssUrl: null,
     latestItems: [],
     updatedAt: null,
   };
 
   if (!baseUrl) return { ...registry, ...defaultRegistyData };
 
-  const rss = await findAndFetchRssFeed(baseUrl);
+  const rssUrl = await getRegistryRssUrl(baseUrl);
+
+  if (!rssUrl) return { ...registry, ...defaultRegistyData };
+
+  const rss = await findAndFetchRssFeed(rssUrl);
 
   if (!rss) return { ...registry, ...defaultRegistyData };
 
@@ -103,6 +103,7 @@ const enrichRegistryWithRssData = async (
     ...registry,
     hasFeed: Boolean(rss && rss.rss && rss.rss.channel),
     feed: rss?.rss?.channel,
+    rssUrl,
     latestItems,
     updatedAt,
   };
@@ -110,10 +111,14 @@ const enrichRegistryWithRssData = async (
 
 const sortRegistriesByDate = (registries: Registry[]): Registry[] => {
   return [...registries].sort((a, b) => {
-    if (!a.updatedAt && !b.updatedAt) return 0;
+    if (!a.updatedAt && !b.updatedAt) return a.name.localeCompare(b.name);
     if (!a.updatedAt) return 1;
     if (!b.updatedAt) return -1;
-    return b.updatedAt.getTime() - a.updatedAt.getTime();
+
+    const timeDiff = b.updatedAt.getTime() - a.updatedAt.getTime();
+    if (timeDiff !== 0) return timeDiff;
+
+    return a.name.localeCompare(b.name);
   });
 };
 

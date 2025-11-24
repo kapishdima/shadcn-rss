@@ -10,17 +10,23 @@ import { Badge } from "./ui/badge";
 import { CodeBlock } from "./code-block";
 import { Button } from "./ui/button";
 
-export const WithoutRss: React.FC = () => {
+export const WithoutRss: React.FC<{ children?: React.ReactNode }> = ({
+  children,
+}) => {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button
-          size="sm"
-          variant="outline"
-          className="py-1 text-xs font-semibold cursor-pointer"
-        >
-          Connect RSS feed
-        </Button>
+        {children ? (
+          children
+        ) : (
+          <Button
+            size="sm"
+            variant="outline"
+            className="h-7 px-2 py-1 text-xs font-semibold cursor-pointer"
+          >
+            Connect RSS feed
+          </Button>
+        )}
       </DialogTrigger>
       <DialogContent className="max-h-[80vh] overflow-y-auto md:max-w-[60vw] md:w-[60vw] w-full">
         <DialogHeader>

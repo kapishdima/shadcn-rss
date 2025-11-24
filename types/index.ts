@@ -7,6 +7,7 @@ export type Registry = {
   searchKeywords?: string[];
   hasFeed?: boolean;
   feed?: RssChannel | null;
+  rssUrl?: string | null;
   latestItems?: RssItem[] | null;
   updatedAt?: Date | null;
 };

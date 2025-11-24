@@ -8,6 +8,7 @@ import { RegistriesList } from "./registries-list";
 import { LatestChangesList } from "./latest-changes-list";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { Tabs, TabsList, TabsTrigger } from "./ui/tabs";
 
 type RegistriesPageContentProps = {
   registries: Registry[];

@@ -1,20 +1,12 @@
 "use client";
 
 import * as React from "react";
+import { motion } from "motion/react";
+import { Search, X } from "lucide-react";
+import { debounce, useQueryState } from "nuqs";
 
 import { Registry } from "@/types";
-import {
-  Item,
-  ItemActions,
-  ItemContent,
-  ItemDescription,
-  ItemGroup,
-  ItemMedia,
-  ItemSeparator,
-  ItemTitle,
-} from "@/components/ui/item";
-import { RegistryUpdate } from "./registry-update";
-import { WithoutRss } from "./without-rss";
+import { findRegistry } from "@/lib/data";
 import { Field } from "./ui/field";
 import {
   InputGroup,
@@ -22,9 +14,7 @@ import {
   InputGroupButton,
   InputGroupInput,
 } from "./ui/input-group";
-import { Search, X } from "lucide-react";
-import { debounce, useQueryState } from "nuqs";
-import { findRegistry } from "@/lib/data";
+import { RegistryCard } from "./registry-card";
 
 type RegistriesListProps = {
   registries: Registry[];
@@ -33,21 +23,22 @@ type RegistriesListProps = {
 export const RegistriesList: React.FC<RegistriesListProps> = ({
   registries,
 }) => {
-  // console.log("Rendering RegistriesList with registries:", registries);
   const [query, setQuery] = useQueryState("q", {
     defaultValue: "",
     limitUrlUpdates: debounce(250),
   });
 
+  const filteredRegistries = findRegistry(query, registries);
+
   return (
-    <div className="mt-6">
-      <Field>
-        <InputGroup>
+    <div className="mt-6 w-full">
+      <Field className="mb-8">
+        <InputGroup className="bg-background dark:bg-background">
           <InputGroupAddon>
             <Search />
           </InputGroupAddon>
           <InputGroupInput
-            placeholder="Search"
+            placeholder="Search registries..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
           />
@@ -67,43 +58,19 @@ export const RegistriesList: React.FC<RegistriesListProps> = ({
           </InputGroupAddon>
         </InputGroup>
       </Field>
-      <ItemGroup className="my-8">
-        {findRegistry(query, registries).map((registry, index) => (
-          <React.Fragment key={index}>
-            <Item className="group/item relative gap-6 px-0">
-              <ItemMedia
-                variant="image"
-                dangerouslySetInnerHTML={{ __html: registry.logo }}
-                className="*:[svg]:fill-foreground grayscale *:[svg]:size-8"
-              />
-              <ItemContent>
-                <ItemActions className="relative z-10 self-start md:hidden flex mb-2">
-                  <RegistryUpdate registry={registry} />
-                  {!registry.hasFeed && <WithoutRss />}
-                </ItemActions>
-                <ItemTitle>
-                  {registry.name}{" "}
-                  {!registry.hasFeed && (
-                    <span className="text-xs text-red-600">Without RSS</span>
-                  )}
-                </ItemTitle>
-                {registry.description && (
-                  <ItemDescription className="max-w-[70%] text-balance">
-                    {registry.description}
-                  </ItemDescription>
-                )}
-              </ItemContent>
-              <ItemActions className="relative z-10 self-start md:flex hidden">
-                <RegistryUpdate registry={registry} />
-                {!registry.feed && <WithoutRss />}
-              </ItemActions>
-            </Item>
-            {index < registries.length - 1 && (
-              <ItemSeparator className="my-1" />
-            )}
-          </React.Fragment>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {filteredRegistries.map((registry, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: index * 0.05 }}
+          >
+            <RegistryCard registry={registry} />
+          </motion.div>
         ))}
-      </ItemGroup>
+      </div>
     </div>
   );
 };
