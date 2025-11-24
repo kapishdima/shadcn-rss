@@ -42,15 +42,6 @@ export const SelectionBar: React.FC<SelectionBarProps> = ({
               </Button>
               <Button
                 variant="ghost"
-                size="sm"
-                className="h-8 rounded-full px-3 text-xs font-medium"
-                onClick={() => copyRssUrls(selectedRegistries)}
-              >
-                <Copy className="mr-2 size-3.5" />
-                Copy URLs
-              </Button>
-              <Button
-                variant="ghost"
                 size="icon-sm"
                 className="h-8 w-8 rounded-full ml-1 hover:bg-muted text-muted-foreground hover:text-foreground"
                 onClick={onClear}

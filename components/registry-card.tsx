@@ -52,7 +52,7 @@ export const RegistryCard: React.FC<RegistryCardProps> = ({
             {registry.name}
           </CardTitle>
         </div>
-        {onToggle && (
+        {registry.rssUrl && onToggle && (
           <Button
             variant="ghost"
             size="icon-sm"
