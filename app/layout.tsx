@@ -26,21 +26,30 @@ export const metadata: Metadata = {
     template: "%s | shadcn/rss",
   },
   description:
-    "A directory of RSS feeds from the ShadCN UI community registries.",
+    "A community-driven directory of RSS feeds for shadcn/ui registries. Stay updated with the latest components, blocks, and changes across the entire shadcn ecosystem.",
   openGraph: {
     title: "shadcn/rss",
     description:
-      "A directory of RSS feeds from the ShadCN UI community registries.",
-    url: "https://shadrss.vercel.app",
+      "A community-driven directory of RSS feeds for shadcn/ui registries. Stay updated with the latest components, blocks, and changes across the entire shadcn ecosystem.",
+    url: "https://shadcn-rss.vercel.app/",
     siteName: "shadcn/rss",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "shadcn/rss",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "shadcn/rss",
     description:
-      "A directory of RSS feeds from the ShadCN UI community registries.",
+      "A community-driven directory of RSS feeds for shadcn/ui registries. Stay updated with the latest components, blocks, and changes across the entire shadcn ecosystem.",
+    images: ["/og.png"],
   },
 };
 
