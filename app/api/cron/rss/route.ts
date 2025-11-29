@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { syncRssFeeds } from "@/lib/sync";
 
 export const dynamic = "force-dynamic";
@@ -9,6 +10,9 @@ export async function GET() {
     console.log("[Cron] Starting RSS feeds sync...");
     const result = await syncRssFeeds();
     console.log("[Cron] RSS feeds sync complete:", result);
+
+    // Revalidate homepage to show fresh data
+    revalidatePath("/");
 
     return NextResponse.json({
       success: true,

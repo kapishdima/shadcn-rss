@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { revalidatePath } from "next/cache";
 import { eq, like } from "drizzle-orm";
 import { db, schema } from "@/db";
 
@@ -77,6 +78,9 @@ export async function POST(request: Request) {
       .update(schema.registries)
       .set({ isActive: active })
       .where(eq(schema.registries.id, registry.id));
+
+    // Revalidate the homepage to reflect changes immediately
+    revalidatePath("/");
 
     return NextResponse.json({
       success: true,

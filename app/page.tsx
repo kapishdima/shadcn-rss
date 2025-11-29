@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 import { AnimateIcon } from "@/components/animate-ui/icons/icon";
 import { Wifi } from "@/components/animate-ui/icons/wifi";
 import { RegistriesPageContent } from "@/components/registries-page-content";
@@ -7,6 +6,9 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 import { collectRssFeed } from "@/lib/data";
+
+// Revalidate every 5 minutes to pick up database changes
+export const revalidate = 300;
 
 export default async function Home() {
   const registries = await collectRssFeed();
