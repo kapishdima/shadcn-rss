@@ -4,9 +4,9 @@ import { db, schema } from "@/db";
 import { RssFeed, RssItem } from "@/types";
 import { REGISTRIES_URL, RSS_URLS } from "./config";
 
-const CONCURRENCY = 10; // Process 10 registries in parallel
-const DISCOVERY_TIMEOUT = 2000; // 2s for RSS discovery
-const FETCH_TIMEOUT = 5000; // 5s for RSS fetch
+const CONCURRENCY = 10;
+const DISCOVERY_TIMEOUT = 2000;
+const FETCH_TIMEOUT = 5000;
 
 type RemoteRegistry = {
   name: string;
@@ -50,13 +50,13 @@ export async function syncRegistries(): Promise<{
           fetchedAt: new Date(),
         };
 
-        db.insert(schema.registries)
+        await db
+          .insert(schema.registries)
           .values({ ...data, url: remote.url })
           .onConflictDoUpdate({
             target: schema.registries.url,
             set: data,
-          })
-          .run();
+          });
         synced++;
       } catch (error) {
         console.error(`Failed to sync registry ${remote.name}:`, error);
@@ -132,21 +132,20 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
   const rssUrl = registry.rssUrl ?? (await discoverRssUrl(baseUrl));
 
   if (!rssUrl) {
-    db.update(schema.registries)
+    await db
+      .update(schema.registries)
       .set({ hasFeed: false, rssUrl: null, fetchedAt: new Date() })
-      .where(eq(schema.registries.id, registry.id))
-      .run();
+      .where(eq(schema.registries.id, registry.id));
     return { hasFeed: false, itemCount: 0 };
   }
 
   const feed = await fetchRssFeed(rssUrl);
 
   if (!feed?.rss?.channel) {
-    // RSS URL didn't work, clear it so we rediscover next time
-    db.update(schema.registries)
+    await db
+      .update(schema.registries)
       .set({ hasFeed: false, rssUrl: null, fetchedAt: new Date() })
-      .where(eq(schema.registries.id, registry.id))
-      .run();
+      .where(eq(schema.registries.id, registry.id));
     return { hasFeed: false, itemCount: 0 };
   }
 
@@ -167,7 +166,8 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
       : null;
 
   // Update registry
-  db.update(schema.registries)
+  await db
+    .update(schema.registries)
     .set({
       hasFeed: true,
       rssUrl,
@@ -177,13 +177,12 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
       updatedAt: latestPubDate,
       fetchedAt: new Date(),
     })
-    .where(eq(schema.registries.id, registry.id))
-    .run();
+    .where(eq(schema.registries.id, registry.id));
 
   // Delete old items and batch insert new ones
-  db.delete(schema.rssItems)
-    .where(eq(schema.rssItems.registryId, registry.id))
-    .run();
+  await db
+    .delete(schema.rssItems)
+    .where(eq(schema.rssItems.registryId, registry.id));
 
   if (items.length > 0) {
     const rssItemValues = items.map((item: RssItem) => ({
@@ -195,7 +194,7 @@ async function processRegistryRss(registry: RegistryRecord): Promise<{
       pubDate: new Date(item.pubDate),
     }));
 
-    db.insert(schema.rssItems).values(rssItemValues).run();
+    await db.insert(schema.rssItems).values(rssItemValues);
   }
 
   return { hasFeed: true, itemCount: items.length };
@@ -229,7 +228,7 @@ export async function syncRssFeeds(): Promise<{
   itemsSynced: number;
   errors: number;
 }> {
-  const registries = db.select().from(schema.registries).all();
+  const registries = await db.select().from(schema.registries);
 
   let withFeeds = 0;
   let itemsSynced = 0;

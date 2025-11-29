@@ -92,18 +92,19 @@ function sortRegistriesByDate(registries: Registry[]): Registry[] {
  * Get all registries from database with their RSS items
  */
 export async function getRegistries(): Promise<Registry[]> {
-  const dbRegistries = db.select().from(schema.registries).all();
+  const dbRegistries = await db.select().from(schema.registries);
 
-  const registries = dbRegistries.map((dbRegistry) => {
-    const rssItems = db
-      .select()
-      .from(schema.rssItems)
-      .where(eq(schema.rssItems.registryId, dbRegistry.id))
-      .orderBy(desc(schema.rssItems.pubDate))
-      .all();
+  const registries = await Promise.all(
+    dbRegistries.map(async (dbRegistry) => {
+      const rssItems = await db
+        .select()
+        .from(schema.rssItems)
+        .where(eq(schema.rssItems.registryId, dbRegistry.id))
+        .orderBy(desc(schema.rssItems.pubDate));
 
-    return toRegistry(dbRegistry, rssItems);
-  });
+      return toRegistry(dbRegistry, rssItems);
+    })
+  );
 
   return registries;
 }

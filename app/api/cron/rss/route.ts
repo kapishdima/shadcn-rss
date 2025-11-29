@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { syncRssFeeds } from "@/lib/sync";
 
 export const dynamic = "force-dynamic";
-export const maxDuration = 300; // 5 minutes for RSS sync (many feeds)
+export const maxDuration = 300;
 
 export async function GET() {
   try {
