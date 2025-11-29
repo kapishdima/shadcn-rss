@@ -1,6 +1,6 @@
 import "server-only";
 
-import { desc, eq } from "drizzle-orm";
+import { and, desc, eq } from "drizzle-orm";
 import { isWithinInterval, sub } from "date-fns";
 
 import { db, schema } from "@/db";
@@ -89,10 +89,13 @@ function sortRegistriesByDate(registries: Registry[]): Registry[] {
 }
 
 /**
- * Get all registries from database with their RSS items
+ * Get all active registries from database with their RSS items
  */
 export async function getRegistries(): Promise<Registry[]> {
-  const dbRegistries = await db.select().from(schema.registries);
+  const dbRegistries = await db
+    .select()
+    .from(schema.registries)
+    .where(eq(schema.registries.isActive, true));
 
   const registries = await Promise.all(
     dbRegistries.map(async (dbRegistry) => {

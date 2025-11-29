@@ -14,6 +14,8 @@ export const registries = sqliteTable(
     url: text("url").notNull().unique(),
     description: text("description").notNull(),
     logo: text("logo").default(""),
+    // Status
+    isActive: integer("is_active", { mode: "boolean" }).notNull().default(true),
     // RSS feed information
     hasFeed: integer("has_feed", { mode: "boolean" }).default(false),
     rssUrl: text("rss_url"),

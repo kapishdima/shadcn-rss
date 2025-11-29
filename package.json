@@ -11,7 +11,8 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:sync": "tsx scripts/sync.ts",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "registry": "tsx scripts/registry.ts"
   },
   "dependencies": {
     "@libsql/client": "^0.15.15",

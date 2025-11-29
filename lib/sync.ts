@@ -1,5 +1,5 @@
 import { XMLParser } from "fast-xml-parser";
-import { eq } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import { db, schema } from "@/db";
 import { RssFeed, RssItem } from "@/types";
 import { REGISTRIES_URL, RSS_URLS } from "./config";
@@ -220,7 +220,7 @@ async function processInBatches<T, R>(
 }
 
 /**
- * Sync RSS feeds for all registries (parallelized)
+ * Sync RSS feeds for all active registries (parallelized)
  */
 export async function syncRssFeeds(): Promise<{
   processed: number;
@@ -228,7 +228,10 @@ export async function syncRssFeeds(): Promise<{
   itemsSynced: number;
   errors: number;
 }> {
-  const registries = await db.select().from(schema.registries);
+  const registries = await db
+    .select()
+    .from(schema.registries)
+    .where(eq(schema.registries.isActive, true));
 
   let withFeeds = 0;
   let itemsSynced = 0;
