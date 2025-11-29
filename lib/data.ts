@@ -1,115 +1,81 @@
-import { XMLParser } from "fast-xml-parser";
+import "server-only";
 
-import { Registry, RssFeed, RssItem } from "@/types";
-import {
-  CACHE_TTL,
-  REGISTRIES_URL,
-  RSS_URLS,
-  STILL_UPDATED_DAYS,
-} from "./config";
-import { isWithinInterval, max, sub } from "date-fns";
+import { desc, eq } from "drizzle-orm";
+import { isWithinInterval, sub } from "date-fns";
 
-const getRegistryRssUrl = async (baseUrl: string): Promise<string | null> => {
-  for (const rssPath of RSS_URLS) {
-    try {
-      const testUrl = `${baseUrl.replace(/\/+$/, "")}/${rssPath.replace(
-        /^\/+/,
-        ""
-      )}`;
-      const response = await fetch(testUrl, {
-        method: "HEAD",
-        signal: AbortSignal.timeout(5000),
-        next: { revalidate: CACHE_TTL },
-      });
+import { db, schema } from "@/db";
+import { Registry, RssItem } from "@/types";
+import { STILL_UPDATED_DAYS } from "./config";
 
-      if (response.ok) {
-        return testUrl;
-      }
-    } catch (error) {
-      continue;
-    }
-  }
-  return null;
-};
+const normalizeQuery = (query: string) =>
+  query.toLowerCase().replaceAll(" ", "").replaceAll("@", "");
 
-const findAndFetchRssFeed = async (rssUrl: string): Promise<RssFeed | null> => {
-  const parser = new XMLParser();
-
-  try {
-    const response = await fetch(rssUrl, {
-      next: { revalidate: CACHE_TTL },
-      signal: AbortSignal.timeout(15000),
-    });
-
-    if (!response.ok) {
-      return null;
-    }
-
-    return parser.parse(await response.text()) as RssFeed;
-  } catch (error) {
-    return null;
-  }
-};
-
-const findLatestRegistryItemUpdated = (
-  registryItems?: RssItem[]
-): RssItem[] | null => {
-  if (!registryItems || registryItems.length === 0) return null;
-
-  return registryItems
-    .filter((item) =>
-      isWithinInterval(new Date(item.pubDate), {
-        start: sub(new Date(), { days: STILL_UPDATED_DAYS }),
-        end: new Date(),
-      })
-    )
-    .toSorted(sortRegistryItemsByDate);
-};
-
-const findRegistryUpdatedAt = (
-  registryItems?: RssItem[] | null
-): Date | null => {
-  if (!registryItems || registryItems.length === 0) return null;
-
-  return max(registryItems.map((item) => new Date(item.pubDate))) ?? null;
-};
-
-const enrichRegistryWithRssData = async (
-  registry: Registry
-): Promise<Registry> => {
-  const baseUrl = registry.homepage || registry.url;
-  const defaultRegistyData = {
-    hasFeed: false,
-    feed: null,
-    rssUrl: null,
-    latestItems: [],
-    updatedAt: null,
-  };
-
-  if (!baseUrl) return { ...registry, ...defaultRegistyData };
-
-  const rssUrl = await getRegistryRssUrl(baseUrl);
-
-  if (!rssUrl) return { ...registry, ...defaultRegistyData };
-
-  const rss = await findAndFetchRssFeed(rssUrl);
-
-  if (!rss) return { ...registry, ...defaultRegistyData };
-
-  const latestItems = findLatestRegistryItemUpdated(rss.rss?.channel?.item);
-  const updatedAt = findRegistryUpdatedAt(latestItems);
+/**
+ * Transform database registry to application Registry type
+ */
+function toRegistry(
+  dbRegistry: typeof schema.registries.$inferSelect,
+  rssItems: (typeof schema.rssItems.$inferSelect)[]
+): Registry {
+  const latestItems = filterRecentItems(rssItems);
 
   return {
-    ...registry,
-    hasFeed: Boolean(rss && rss.rss && rss.rss.channel),
-    feed: rss?.rss?.channel,
-    rssUrl,
+    name: dbRegistry.name,
+    homepage: dbRegistry.homepage,
+    url: dbRegistry.url,
+    description: dbRegistry.description,
+    logo: dbRegistry.logo || "",
+    searchKeywords: [
+      normalizeQuery(dbRegistry.name),
+      normalizeQuery(dbRegistry.description),
+    ],
+    hasFeed: dbRegistry.hasFeed ?? false,
+    feed: dbRegistry.hasFeed
+      ? {
+          title: dbRegistry.feedTitle || "",
+          link: dbRegistry.feedLink || "",
+          description: dbRegistry.feedDescription || "",
+          item: latestItems,
+        }
+      : null,
+    rssUrl: dbRegistry.rssUrl,
     latestItems,
-    updatedAt,
+    updatedAt: dbRegistry.updatedAt,
   };
-};
+}
 
-const sortRegistriesByDate = (registries: Registry[]): Registry[] => {
+/**
+ * Filter RSS items to only include recent ones (within STILL_UPDATED_DAYS)
+ */
+function filterRecentItems(
+  items: (typeof schema.rssItems.$inferSelect)[]
+): RssItem[] {
+  const now = new Date();
+  const cutoffDate = sub(now, { days: STILL_UPDATED_DAYS });
+
+  return items
+    .filter((item) =>
+      isWithinInterval(item.pubDate, {
+        start: cutoffDate,
+        end: now,
+      })
+    )
+    .map((item) => ({
+      title: item.title,
+      link: item.link,
+      guid: item.guid,
+      description: item.description || "",
+      pubDate: item.pubDate.toISOString(),
+    }))
+    .sort(
+      (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
+    );
+}
+
+/**
+ * Sort registries by update date (most recent first), then by name
+ */
+function sortRegistriesByDate(registries: Registry[]): Registry[] {
   return [...registries].sort((a, b) => {
     if (!a.updatedAt && !b.updatedAt) return a.name.localeCompare(b.name);
     if (!a.updatedAt) return 1;
@@ -120,50 +86,34 @@ const sortRegistriesByDate = (registries: Registry[]): Registry[] => {
 
     return a.name.localeCompare(b.name);
   });
-};
+}
 
-const sortRegistryItemsByDate = (a: RssItem, b: RssItem): number => {
-  return new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime();
-};
+/**
+ * Get all registries from database with their RSS items
+ */
+export async function getRegistries(): Promise<Registry[]> {
+  const dbRegistries = db.select().from(schema.registries).all();
 
-export const collectRssFeed = async (): Promise<Registry[]> => {
+  const registries = dbRegistries.map((dbRegistry) => {
+    const rssItems = db
+      .select()
+      .from(schema.rssItems)
+      .where(eq(schema.rssItems.registryId, dbRegistry.id))
+      .orderBy(desc(schema.rssItems.pubDate))
+      .all();
+
+    return toRegistry(dbRegistry, rssItems);
+  });
+
+  return registries;
+}
+
+/**
+ * Get all registries with RSS data, sorted by update date
+ */
+export async function collectRssFeed(): Promise<Registry[]> {
   const registries = await getRegistries();
+  return sortRegistriesByDate(registries);
+}
 
-  const registriesWithRss = await Promise.all(
-    registries.map(enrichRegistryWithRssData)
-  );
-
-  return sortRegistriesByDate(registriesWithRss);
-};
-
-export const findRegistry = (query: string, registries: Registry[]) => {
-  return registries.filter((registry) =>
-    registry.searchKeywords?.some((keyword) =>
-      keyword.includes(normalizeQuery(query))
-    )
-  );
-};
-
-const normalizeQuery = (query: string) =>
-  query.toLowerCase().replaceAll(" ", "").replaceAll("@", "");
-
-export const getRegistries = async (): Promise<Registry[]> => {
-  try {
-    const res = await fetch(REGISTRIES_URL, {
-      next: { revalidate: CACHE_TTL },
-    });
-    if (!res.ok) throw new Error("Failed to fetch registries");
-    const registries = await res.json();
-
-    return registries.map((registry: Registry) => ({
-      ...registry,
-      searchKeywords: [
-        normalizeQuery(registry.name),
-        normalizeQuery(registry.description),
-      ],
-    }));
-  } catch (error) {
-    console.error("Failed to fetch registries, using mock data:", error);
-    return [];
-  }
-};
+// Note: findRegistry has been moved to lib/registry-utils.ts for client-side usage
