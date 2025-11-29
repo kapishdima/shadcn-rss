@@ -2,7 +2,7 @@
 
 import { debounce, parseAsArrayOf, parseAsString, useQueryState } from "nuqs";
 
-import { findRegistry } from "@/lib/data";
+import { findRegistry } from "@/lib/registry-utils";
 import { Registry } from "@/types";
 
 export function useRegistryState(registries: Registry[]) {
