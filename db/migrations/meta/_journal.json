@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1764419086018,
+      "tag": "0000_happy_cable",
+      "breakpoints": true
+    }
+  ]
+}

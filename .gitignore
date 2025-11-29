@@ -42,3 +42,8 @@ next-env.d.ts
 
 # data files
 /data
+
+# SQLite
+*.db
+*.db-wal
+*.db-shm
