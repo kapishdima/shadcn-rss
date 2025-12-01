@@ -185,7 +185,7 @@ export function WebhookCard({
           <div className="flex items-center gap-2 text-sm font-medium">
             <WebhookStatus status={webhook.status} />
             <span
-              className="font-mono text-sm truncate flex-1"
+              className="font-mono text-sm truncate flex-1 max-w-[40%]"
               title={webhook.url}
             >
               {webhook.url}
