@@ -22,6 +22,34 @@
       "when": 1764441886226,
       "tag": "0002_outstanding_mathemanic",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1764445420859,
+      "tag": "0003_auth_tables",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1764446500000,
+      "tag": "0004_cleanup_auth",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1764448000000,
+      "tag": "0005_add_verification",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1764450013701,
+      "tag": "0006_sleepy_sentinel",
+      "breakpoints": true
     }
   ]
 }

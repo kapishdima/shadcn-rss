@@ -5,7 +5,7 @@ on:
     # Sync registries daily at midnight UTC
     - cron: "0 0 * * *"
     # Sync RSS feeds every 15 minutes
-    - cron: "*/15 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch: # Allow manual trigger
 
 jobs:

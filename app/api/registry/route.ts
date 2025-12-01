@@ -19,6 +19,7 @@ export async function GET(request: Request) {
   return NextResponse.json({
     total: filtered.length,
     registries: filtered.map((r) => ({
+      id: r.id,
       name: r.name,
       isActive: r.isActive,
       hasFeed: r.hasFeed,
