@@ -1,102 +1,56 @@
 # shadcn/rss
 
-A community-driven directory of RSS feeds for shadcn/ui registries. Stay updated with the latest components, blocks, and changes across the entire shadcn ecosystem.
+An application that allows you to track changes in your favorite registries. Every new component or change to existing ones will be displayed here!
 
-## The Problem
+![shadcn/rss](public/hero.png)
 
-The shadcn/ui ecosystem has grown significantly, with dozens of community registries offering components, blocks, and utilities. It has become quite difficult to keep track of everyone, find out about updates, and it is quite easy to miss something important.
+## Why was this created?
 
-## The Solution
+As the number of registries grows, it becomes increasingly difficult to track changes among such a large stream of information. This application provides a centralized place to view all changes across all registries in one location.
 
-**shadcn/rss** solves this by:
+## Key Features
 
-- 🔍 **Auto-discovering RSS feeds** from all registries in the official shadcn directory
-- 📡 **Aggregating updates** into a single, browsable timeline
-- 🔖 **Enabling subscriptions** — Select registries and export as OPML for your RSS reader
-- ⚡ **Real-time tracking** — Shows which registries were updated recently (within 30 days)
+- **Registry Display**: View all registries and their last update dates
+- **Change Tracking**: See a list of the latest changes for each registry
+- **OPML Export**: Export data to OPML format for use in RSS readers (e.g., Feeder for Android)
+- **Activity Graph**: Visualize registry activity and compare which registries release updates most frequently
 
-## Features
+## How to Add RSS to Your Registry
 
-### 📋 Registry Directory
+You need to add a route in your project that serves `rss.xml`. You can do this manually, or click the `Connect RSS feed` button next to your registry in the application and copy the provided code.
 
-Browse all shadcn/ui community registries with:
+### Supported Routes
 
-- Registry name, description, and logo
-- Direct links to registry websites
-- RSS feed availability indicators
-- "Updated X days ago" badges for active registries
+The following routes are supported:
 
-### 📰 Latest Changes Feed
-
-A unified timeline showing the most recent updates across all registries:
-
-- Component releases and updates
-- New blocks and utilities
-- Sorted chronologically with timestamps
-
-### 📥 OPML Export
-
-Select your favorite registries and export them as an OPML file:
-
-- Import into any RSS reader (Feedly, Inoreader, NetNewsWire, etc.)
-- Bulk subscribe to multiple registries at once
-- Copy individual RSS URLs to clipboard
-
----
-
-## Getting Started
-
-### Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/DimaDevelopment/shadrss.git
-cd shadrss
+```
+/rss.xml
+/feed.xml
+/rss
+/feed
+/feed.rss
+/rss.rss
+/registry/rss
+/registry/rss.xml
+/registry/feed
+/registry/feed.xml
 ```
 
-2. Install dependencies:
+### Setup Instructions (Next.js)
 
-```bash
-pnpm install
-```
+> **Note**: This guide assumes your registry is a Next.js application. If you're using a different stack, you can still adapt this approach to your framework.
 
-3. Run the development server:
+1. **Install the package**: `pnpm add @wandry/analytics-sdk`
 
-```bash
-pnpm dev
-```
+2. **Create the route file**: Create `/rss.xml/route.ts`
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-### Scripts
-
-| Command      | Description              |
-| ------------ | ------------------------ |
-| `pnpm dev`   | Start development server |
-| `pnpm build` | Build for production     |
-| `pnpm start` | Start production server  |
-| `pnpm lint`  | Run ESLint               |
-
----
-
-## Adding RSS Feed to Your Registry
-
-Want your registry to appear with update tracking? Add an RSS feed endpoint using `@wandry/analytics-sdk`:
-
-### Step 1: Install the package
-
-```bash
-npm install @wandry/analytics-sdk
-```
-
-### Step 2: Create an RSS route
-
-Create a route handler in your Next.js app (e.g., `app/rss.xml/route.ts`):
+3. **Add the following code**:
 
 ```typescript
 import { generateRegistryRssFeed } from "@wandry/analytics-sdk";
 import type { NextRequest } from "next/server";
+
+export const revalidate = 3600;
 
 export async function GET(request: NextRequest) {
   const baseUrl = new URL(request.url).origin;
@@ -104,9 +58,9 @@ export async function GET(request: NextRequest) {
   const rssXml = await generateRegistryRssFeed({
     baseUrl,
     rss: {
-      title: "Your Registry Name",
-      description: "Subscribe to Your Registry updates",
-      link: "https://your-registry-url.com",
+      title: "@registry",
+      description: "Subscribe to @registry updates",
+      link: "https://registry.example",
       pubDateStrategy: "githubLastEdit",
     },
     github: {
@@ -133,32 +87,71 @@ export async function GET(request: NextRequest) {
 }
 ```
 
-### Step 3: Configure environment variables
+4. **Add the GitHub Token**: Set the `GITHUB_TOKEN` environment variable (see below)
 
-Add your GitHub token to `.env.local`:
+## GitHub Token
 
-```env
-GITHUB_TOKEN=your_github_token_here
+The GitHub token is **required** to correctly retrieve the date and time of the last change for each registry item. When generating `rss.xml`, a request is sent to the GitHub API to fetch the commit date for each registry item.
+
+> **Important**: If you don't provide a GitHub token or it's incorrectly configured, all your registry items will have an update date equal to the RSS feed update date, which is not very informative.
+
+### How to Create a GitHub Token
+
+1. Navigate to **Profile → Settings → Developer Settings**
+
+   - Direct link: https://github.com/settings/personal-access-tokens
+
+2. Go to **Tokens (classic)**
+
+3. Click **Generate new token (classic)**
+
+4. Select an **Expiration** period
+
+5. Select the required **Scopes**. For everything to work correctly, you need to select:
+   - `repo:status`
+   - `public_repo`
+
+## Link Formation
+
+Since each registry may have its own documentation structure, the RSS generator cannot know exactly which link to use for a registry item. Therefore, three options are provided for link formation:
+
+### 1. Path String
+
+Using a simple path string:
+
+```typescript
+blocksUrl: "/docs/blocks";
 ```
 
-### Step 4: Deploy
+This generates a link like: `https://registry.example/docs/blocks/registry-item`
 
-Once deployed, your RSS feed will be automatically discovered at one of the supported paths.
+### 2. Function with Item Name
 
-### Supported RSS Paths
+Using a function that receives the registry item name as an argument:
 
-The project automatically checks these paths for RSS feeds:
+```typescript
+blocksUrl: ((itemName) => {
+  return `blocks/auth/${itemName}`;
+}) as UrlResolverByName;
+```
 
-| Path                | Alternative          |
-| ------------------- | -------------------- |
-| `/rss.xml`          | `/feed.xml`          |
-| `/rss`              | `/feed`              |
-| `/feed.rss`         | `/rss.rss`           |
-| `/registry/rss`     | `/registry/feed`     |
-| `/registry/rss.xml` | `/registry/feed.xml` |
+This generates a link like: `https://registry.example/blocks/auth/registry-item`
 
----
+### 3. Function with Full Item Object
 
-<p align="center">
-  Made with ❤️ by <a href="https://x.com/kapish_dima">@KapishDima</a>
-</p>
+Using a function that receives the complete registry item as an argument:
+
+```typescript
+blocksUrl: ((item) => {
+  const category = item.categories.at(0);
+  const name = item.name;
+
+  return `blocks/${category}/${name}`;
+}) as UrlResolverByItem;
+```
+
+This generates a link like: `https://registry.example/blocks/auth/registry-item`
+
+## What if Your Registry is Not in the List?
+
+The list of registries is sourced from the [shadcn directory](https://ui.shadcn.com/docs/directory). If your registry is not listed there, you can reach out via DM on [X (Twitter)](https://x.com/kapish_dima) and I'll add it manually.
