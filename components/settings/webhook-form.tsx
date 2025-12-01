@@ -17,7 +17,10 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { getRegistries, type RegistryOption } from "@/lib/api/registries";
+import {
+  getRegistriesWithFeed,
+  type RegistryOption,
+} from "@/lib/api/registries";
 
 export type { RegistryOption };
 
@@ -59,7 +62,7 @@ export function WebhookForm({
     async function loadRegistries() {
       try {
         setIsLoadingRegistries(true);
-        const registries = await getRegistries();
+        const registries = await getRegistriesWithFeed();
         setAvailableRegistries(registries);
       } catch (error) {
         console.error("Failed to load registries:", error);
@@ -105,12 +108,20 @@ export function WebhookForm({
               <div className="mb-4">
                 <FormLabel className="text-base">Registries</FormLabel>
                 <FormDescription>
-                  Select the registries you want to receive updates from.
+                  Select the registries you want to receive updates from. Only
+                  registries with RSS feeds are shown here.
                 </FormDescription>
               </div>
               {isLoadingRegistries ? (
                 <div className="flex items-center justify-center py-4">
                   <Loader2 className="h-4 w-4 animate-spin text-muted-foreground" />
+                </div>
+              ) : availableRegistries.length === 0 ? (
+                <div className="rounded-md border p-4 text-center">
+                  <p className="text-sm text-muted-foreground">
+                    No registries with RSS feeds are available. Webhooks can
+                    only be created for registries that have an active RSS feed.
+                  </p>
                 </div>
               ) : (
                 <div className="max-h-[300px] overflow-y-auto rounded-md border p-4 [&::-webkit-scrollbar]:w-1.5 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-border [&::-webkit-scrollbar-thumb]:rounded-full hover:[&::-webkit-scrollbar-thumb]:bg-muted-foreground/30">

@@ -7,6 +7,7 @@
 export type RegistryOption = {
   id: number;
   name: string;
+  hasFeed: boolean;
 };
 
 // ============================================
@@ -31,8 +32,14 @@ export async function getRegistries(): Promise<RegistryOption[]> {
   }
 
   const data = await response.json();
-  return (data.registries || []).map((r: { id: number; name: string }) => ({
+  return (data.registries || []).map((r: RegistryOption) => ({
     id: r.id,
     name: r.name,
+    hasFeed: r.hasFeed ?? false,
   }));
+}
+
+export async function getRegistriesWithFeed(): Promise<RegistryOption[]> {
+  const registries = await getRegistries();
+  return registries.filter((r) => r.hasFeed);
 }
