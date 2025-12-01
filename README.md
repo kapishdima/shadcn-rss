@@ -97,19 +97,38 @@ The GitHub token is **required** to correctly retrieve the date and time of the 
 
 ### How to Create a GitHub Token
 
-1. Navigate to **Profile → Settings → Developer Settings**
+Navigate to **Profile → Settings → Developer Settings**
 
-   - Direct link: https://github.com/settings/personal-access-tokens
+- Direct link: https://github.com/settings/personal-access-tokens
 
-2. Go to **Tokens (classic)**
+#### Classic Token
 
-3. Click **Generate new token (classic)**
+1. Go to **Tokens (classic)**
 
-4. Select an **Expiration** period
+2. Click **Generate new token (classic)**
 
-5. Select the required **Scopes**. For everything to work correctly, you need to select:
+3. Select an **Expiration** period
+
+4. Select the required **Scopes**. For everything to work correctly, you need to select:
    - `repo:status`
    - `public_repo`
+
+#### Fine-Grained Token
+
+1. Go to **Fine-grained tokens**
+
+2. Click **Generate new token**
+
+3. Configure the token:
+
+   - **Token name**: Enter a descriptive name
+   - **Expiration**: Select an expiration period
+   - **Repository access**: Select the repository you want to access
+
+4. Click **Add permissions**, set the following:
+   - **Content**: Read-only access
+
+> **Note**: Fine-grained tokens provide more granular control and are recommended for new integrations. The **Contents** permission with read-only access is sufficient to retrieve commit information for registry items.
 
 ## Link Formation
 
