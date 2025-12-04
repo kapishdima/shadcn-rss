@@ -1,26 +1,16 @@
+"use server";
+
 import { eq, and, inArray } from "drizzle-orm";
 import { db, schema } from "@/db";
-
-// ============================================
-// Types
-// ============================================
-
-export type PinnedRegistry = {
-  registryId: number;
-  registryName: string;
-  pinnedAt: Date;
-};
-
-// ============================================
-// Database Operations
-// ============================================
+import { Registry } from "@/types";
+import { getRegistriesByIds } from "./registies";
 
 /**
  * Get all pinned registries for a user
  */
 export async function getPinnedRegistriesForUser(
   userId: string
-): Promise<PinnedRegistry[]> {
+): Promise<Registry[]> {
   // Get all pins for the user
   const pins = await db
     .select()
@@ -33,21 +23,9 @@ export async function getPinnedRegistriesForUser(
 
   // Get registry details for all pinned registries
   const registryIds = pins.map((p) => p.registryId);
-  const registries = await db
-    .select()
-    .from(schema.registries)
-    .where(inArray(schema.registries.id, registryIds));
+  const registries = await getRegistriesByIds(registryIds);
 
-  // Create a map of registry id to name
-  const registryMap = new Map(registries.map((r) => [r.id, r.name]));
-
-  return pins
-    .filter((p) => registryMap.has(p.registryId))
-    .map((p) => ({
-      registryId: p.registryId,
-      registryName: registryMap.get(p.registryId)!,
-      pinnedAt: p.createdAt,
-    }));
+  return registries;
 }
 
 /**

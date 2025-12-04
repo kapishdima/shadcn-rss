@@ -34,13 +34,7 @@ export async function GET() {
   try {
     const pins = await getPinnedRegistriesForUser(session.user.id);
 
-    return NextResponse.json({
-      pins: pins.map((p) => ({
-        registryId: p.registryId,
-        registryName: p.registryName,
-        pinnedAt: p.pinnedAt.toISOString(),
-      })),
-    });
+    return NextResponse.json(pins);
   } catch (error) {
     console.error("Failed to get pinned registries:", error);
     return NextResponse.json(
@@ -91,11 +85,7 @@ export async function POST(request: Request) {
       return NextResponse.json({
         success: true,
         migratedCount: registryIds.length,
-        pins: pins.map((p) => ({
-          registryId: p.registryId,
-          registryName: p.registryName,
-          pinnedAt: p.pinnedAt.toISOString(),
-        })),
+        pins,
       });
     }
 

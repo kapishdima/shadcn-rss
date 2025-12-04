@@ -1,5 +1,12 @@
 "use client";
 
+import { Registry } from "@/types";
+import {
+  getLocalStoragePins,
+  setLocalStoragePin,
+  setLocalStorageUnpin,
+} from "@/lib/pins-client-utils";
+
 // ============================================
 // Types
 // ============================================
@@ -27,72 +34,59 @@ export type MigratePinsResponse = {
 /**
  * Get all pinned registries for the current user
  */
-export async function getPins(): Promise<PinnedRegistryResponse[]> {
+export async function getPins(): Promise<Registry[]> {
   const response = await fetch("/api/pins", {
     method: "GET",
     credentials: "include",
   });
 
   if (!response.ok) {
-    if (response.status === 401) {
-      return []; // Not authenticated, return empty
-    }
-    throw new Error("Failed to fetch pinned registries");
+    console.log(
+      "get pins failed, falling back to localStorage",
+      getLocalStoragePins()
+    );
+    return getLocalStoragePins() ?? [];
   }
 
-  const data: GetPinsResponse = await response.json();
-  return data.pins;
+  return (await response.json()) as Registry[];
 }
 
 /**
  * Pin a registry
  */
-export async function pinRegistry(registryId: number): Promise<void> {
-  const response = await fetch("/api/pins", {
-    method: "POST",
-    credentials: "include",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ registryId }),
-  });
+export async function pinRegistry(registry: Registry): Promise<void> {
+  setLocalStoragePin(registry);
 
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({}));
-    throw new Error(error.error || "Failed to pin registry");
-  }
+  try {
+    const response = await fetch("/api/pins", {
+      method: "POST",
+      credentials: "include",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ registryId: registry.id }),
+    });
+
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({}));
+      throw new Error(error.error || "Failed to pin registry");
+    }
+  } catch (error) {}
 }
 
 /**
  * Unpin a registry
  */
-export async function unpinRegistry(registryId: number): Promise<void> {
-  const response = await fetch(`/api/pins?registryId=${registryId}`, {
-    method: "DELETE",
-    credentials: "include",
-  });
+export async function unpinRegistry(registry: Registry): Promise<void> {
+  setLocalStorageUnpin(registry);
 
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({}));
-    throw new Error(error.error || "Failed to unpin registry");
-  }
-}
+  try {
+    const response = await fetch(`/api/pins?registryId=${registry.id}`, {
+      method: "DELETE",
+      credentials: "include",
+    });
 
-/**
- * Migrate pins from localStorage to account (bulk pin)
- */
-export async function migratePinsToAccount(
-  registryNames: string[]
-): Promise<MigratePinsResponse> {
-  const response = await fetch("/api/pins", {
-    method: "POST",
-    credentials: "include",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ registryNames }),
-  });
-
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({}));
-    throw new Error(error.error || "Failed to migrate pins");
-  }
-
-  return response.json();
+    if (!response.ok) {
+      const error = await response.json().catch(() => ({}));
+      throw new Error(error.error || "Failed to unpin registry");
+    }
+  } catch (error) {}
 }

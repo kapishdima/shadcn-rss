@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { AnimateIcon } from "@/components/animate-ui/icons/icon";
+
 import { Wifi } from "@/components/animate-ui/icons/wifi";
 import { RegistriesPageContent } from "@/components/registries-page-content";
 import { Button } from "@/components/ui/button";
@@ -8,9 +8,7 @@ import { WhatsNew } from "@/components/whats-new";
 
 import { collectRssFeed } from "@/lib/data";
 import { UserMenu } from "@/components/auth/user-menu";
-
-// Revalidate every 5 minutes to pick up database changes
-export const revalidate = 300;
+import { AnimateIcon } from "@/components/animate-ui/icons/icon";
 
 export default async function Home() {
   const registries = await collectRssFeed();
@@ -25,9 +23,9 @@ export default async function Home() {
         <header className="w-full flex flex-col items-center text-center mb-8">
           <div className="flex flex-col items-center gap-2 mb-6">
             <div className="p-3 bg-muted/50 rounded-2xl border border-border/50 shadow-sm mb-2">
-              {/* <AnimateIcon animate loop className="size-8"> */}
-              <Wifi className="rotate-45" />
-              {/* </AnimateIcon> */}
+              <AnimateIcon animate loop className="size-8">
+                <Wifi className="rotate-45" />
+              </AnimateIcon>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold leading-tight tracking-tighter text-pretty">
               shadcn/rss

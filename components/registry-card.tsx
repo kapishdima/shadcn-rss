@@ -22,12 +22,16 @@ import { PinRegistry } from "./ui/pin-registry";
 interface RegistryCardProps {
   registry: Registry;
   isSelected?: boolean;
+  isPinned: boolean;
+  togglePin: () => Promise<void>;
   onToggle?: (registry: Registry) => void;
 }
 
 export const RegistryCard: React.FC<RegistryCardProps> = ({
   registry,
   isSelected,
+  isPinned,
+  togglePin,
   onToggle,
 }) => {
   const { handleCopyRss, handleToggle } = useRegistryCardActions(
@@ -54,7 +58,7 @@ export const RegistryCard: React.FC<RegistryCardProps> = ({
           </CardTitle>
         </div>
         <div className="flex items-center gap-1 shrink-0">
-          <PinRegistry registry={registry} />
+          <PinRegistry isPinned={isPinned} togglePin={togglePin} />
           {registry.rssUrl && onToggle && (
             <Button
               variant="ghost"

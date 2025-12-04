@@ -104,7 +104,7 @@ export function WhatsNew({
           transition={{ duration: 0.2 }}
           className={cn("fixed z-50", positionClasses[position], className)}
         >
-          <motion.button
+          <motion.div
             animate={{
               scale: [1, 1.05, 1],
             }}
@@ -143,7 +143,7 @@ export function WhatsNew({
             >
               <X className="h-3 w-3" />
             </Button>
-          </motion.button>
+          </motion.div>
         </motion.div>
       </AnimatePresence>
 

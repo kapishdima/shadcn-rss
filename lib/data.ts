@@ -1,77 +1,10 @@
 import "server-only";
 
-import { and, desc, eq } from "drizzle-orm";
-import { isWithinInterval, sub } from "date-fns";
-
-import { db, schema } from "@/db";
-import { Registry, RssItem } from "@/types";
-import { STILL_UPDATED_DAYS } from "./config";
-
-const normalizeQuery = (query: string) =>
-  query.toLowerCase().replaceAll(" ", "").replaceAll("@", "");
-
-/**
- * Transform database registry to application Registry type
- */
-function toRegistry(
-  dbRegistry: typeof schema.registries.$inferSelect,
-  rssItems: (typeof schema.rssItems.$inferSelect)[]
-): Registry {
-  const latestItems = filterRecentItems(rssItems);
-
-  return {
-    id: dbRegistry.id,
-    name: dbRegistry.name,
-    homepage: dbRegistry.homepage,
-    url: dbRegistry.url,
-    description: dbRegistry.description,
-    logo: dbRegistry.logo || "",
-    searchKeywords: [
-      normalizeQuery(dbRegistry.name),
-      normalizeQuery(dbRegistry.description),
-    ],
-    hasFeed: dbRegistry.hasFeed ?? false,
-    feed: dbRegistry.hasFeed
-      ? {
-          title: dbRegistry.feedTitle || "",
-          link: dbRegistry.feedLink || "",
-          description: dbRegistry.feedDescription || "",
-          item: latestItems,
-        }
-      : null,
-    rssUrl: dbRegistry.rssUrl,
-    latestItems,
-    updatedAt: dbRegistry.updatedAt,
-  };
-}
-
-/**
- * Filter RSS items to only include recent ones (within STILL_UPDATED_DAYS)
- */
-function filterRecentItems(
-  items: (typeof schema.rssItems.$inferSelect)[]
-): RssItem[] {
-  const now = new Date();
-  const cutoffDate = sub(now, { days: STILL_UPDATED_DAYS });
-
-  return items
-    .filter((item) =>
-      isWithinInterval(item.pubDate, {
-        start: cutoffDate,
-        end: now,
-      })
-    )
-    .map((item) => ({
-      title: item.title,
-      link: item.link,
-      guid: item.guid,
-      description: item.description || "",
-      pubDate: item.pubDate.toISOString(),
-    }))
-    .sort(
-      (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
-    );
-}
+import { Registry } from "@/types";
+import { getLocalStoragePins } from "@/lib/pins-client-utils";
+import { getPinnedRegistriesForUser } from "@/lib/pins";
+import { getRegistries } from "@/lib/registies";
+import { getServerSession } from "./auth-server";
 
 /**
  * Sort registries by update date (most recent first), then by name
@@ -89,36 +22,27 @@ function sortRegistriesByDate(registries: Registry[]): Registry[] {
   });
 }
 
-/**
- * Get all active registries from database with their RSS items
- */
-export async function getRegistries(): Promise<Registry[]> {
-  const dbRegistries = await db
-    .select()
-    .from(schema.registries)
-    .where(eq(schema.registries.isActive, true));
+const getPinnedRegistries = async (): Promise<Registry[]> => {
+  const session = await getServerSession();
 
-  const registries = await Promise.all(
-    dbRegistries.map(async (dbRegistry) => {
-      const rssItems = await db
-        .select()
-        .from(schema.rssItems)
-        .where(eq(schema.rssItems.registryId, dbRegistry.id))
-        .orderBy(desc(schema.rssItems.pubDate));
+  if (session?.user.id) {
+    return getPinnedRegistriesForUser(session.user.id);
+  }
 
-      return toRegistry(dbRegistry, rssItems);
-    })
-  );
-
-  return registries;
-}
+  return getLocalStoragePins();
+};
 
 /**
  * Get all registries with RSS data, sorted by update date
  */
 export async function collectRssFeed(): Promise<Registry[]> {
   const registries = await getRegistries();
+
   return sortRegistriesByDate(registries);
 }
 
-// Note: findRegistry has been moved to lib/registry-utils.ts for client-side usage
+export async function getUnpinnedRegistries(): Promise<Registry[]> {
+  const registries = await getRegistries();
+
+  return sortRegistriesByDate(registries);
+}

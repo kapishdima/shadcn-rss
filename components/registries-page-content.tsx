@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { use, useEffect } from "react";
 import { useQueryState } from "nuqs";
 
 import { Registry } from "@/types";
@@ -9,6 +9,7 @@ import { LatestChangesList } from "./latest-changes-list";
 import { ActivityGraph } from "./activity-graph";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
+import { usePinnedRegistries } from "@/hooks/use-pinned-registries";
 
 type RegistriesPageContentProps = {
   registries: Registry[];

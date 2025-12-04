@@ -1,7 +1,5 @@
 import { Registry } from "@/types";
-
-const normalizeQuery = (query: string) =>
-  query.toLowerCase().replaceAll(" ", "").replaceAll("@", "");
+import { normalizeQuery } from "@/utils/strings";
 
 /**
  * Find registries matching a search query

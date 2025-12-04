@@ -1,5 +1,5 @@
 import { XMLParser } from "fast-xml-parser";
-import { and, eq } from "drizzle-orm";
+import { eq } from "drizzle-orm";
 import { db, schema } from "@/db";
 import { RssFeed, RssItem } from "@/types";
 import { REGISTRIES_URL, RSS_URLS } from "./config";
