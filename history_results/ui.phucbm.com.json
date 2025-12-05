@@ -1,0 +1,42 @@
+{
+  "draw-svg": {
+    "lastPublished": "2025-11-09T06:48:22.000Z",
+    "type": "registry:component"
+  },
+  "infinite-grid": {
+    "lastPublished": "2025-11-03T15:07:36.000Z",
+    "type": "registry:component"
+  },
+  "magnetic": {
+    "lastPublished": "2025-11-08T07:30:06.000Z",
+    "type": "registry:component"
+  },
+  "infinite-image-carousel": {
+    "lastPublished": "2025-11-10T16:37:41.000Z",
+    "type": "registry:component"
+  },
+  "moving-border": {
+    "lastPublished": "2025-11-17T03:36:08.000Z",
+    "type": "registry:component"
+  },
+  "spotlight-content": {
+    "lastPublished": "2025-11-03T15:07:36.000Z",
+    "type": "registry:component"
+  },
+  "shimmer-layer": {
+    "lastPublished": "2025-11-10T14:51:07.000Z",
+    "type": "registry:component"
+  },
+  "text-ripple": {
+    "lastPublished": "2025-11-06T18:27:36.000Z",
+    "type": "registry:component"
+  },
+  "text-flower": {
+    "lastPublished": "2025-11-03T15:10:32.000Z",
+    "type": "registry:component"
+  },
+  "word-by-word": {
+    "lastPublished": "2025-11-03T15:10:32.000Z",
+    "type": "registry:component"
+  }
+}

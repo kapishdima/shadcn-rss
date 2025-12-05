@@ -1,0 +1,746 @@
+{
+  "magic-card": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "android": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "line-shadow-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "morphing-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "aurora-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "warp-background": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "scroll-progress": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "pointer": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "progressive-blur": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "lens": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "smooth-cursor": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "neon-gradient-card": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "meteors": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "dot-pattern": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "flickering-grid": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "interactive-grid-pattern": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "grid-pattern": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "hero-video-dialog": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "code-comparison": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "globe": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "shimmer-button": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "tweet-card": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "marquee": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "client-tweet-card": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "bento-grid": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "particles": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "number-ticker": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "retro-grid": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "ripple": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "animated-list": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "animated-shiny-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "animated-grid-pattern": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "border-beam": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "animated-beam": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "text-reveal": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "hyper-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "animated-gradient-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "word-rotate": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "dock": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "avatar-circles": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "typing-animation": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "orbiting-circles": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "sparkles-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "spinning-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "comic-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "text-animate": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "scroll-based-velocity": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "icon-cloud": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "shiny-button": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "shine-border": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "animated-circular-progress-bar": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "pulsating-button": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "ripple-button": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "cool-mode": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "confetti": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "file-tree": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "blur-fade": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "safari": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "rainbow-button": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "terminal": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "interactive-hover-button": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "video-text": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "highlighter": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "animated-theme-toggler": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "pixel-image": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:ui"
+  },
+  "magic-card-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "android-demo-3": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "android-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "line-shadow-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "android-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "warp-background-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "aurora-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "scroll-progress-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "lens-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "morphing-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "lens-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "lens-demo-3": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "pointer-demo-1": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "smooth-cursor-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "meteors-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "progressive-blur-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "neon-gradient-card-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "grid-pattern-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "grid-pattern-linear-gradient": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "grid-pattern-dashed": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "dot-pattern-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "dot-pattern-with-glow-effect": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "dot-pattern-linear-gradient": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "flickering-grid-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "flickering-grid-rounded-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "hero-video-dialog-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "hero-video-dialog-demo-top-in-bottom-out": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "marquee-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "code-comparison-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "marquee-logos": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "marquee-demo-vertical": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "marquee-3d": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "tweet-card-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "tweet-card-images": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "tweet-card-meta-preview": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "bento-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "shimmer-button-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "globe-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "bento-demo-vertical": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "number-ticker-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "number-ticker-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "number-ticker-decimal-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "ripple-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "retro-grid-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-list-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-grid-pattern-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-shiny-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "particles-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "interactive-grid-pattern-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "interactive-grid-pattern-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "border-beam-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "border-beam-demo-3": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "border-beam-demo-4": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "border-beam-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-beam-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-beam-unidirectional": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-beam-bidirectional": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-beam-multiple-outputs": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-reveal-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-gradient-text-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-gradient-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-beam-multiple-inputs": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "orbiting-circles-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "dock-demo-3": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "word-rotate-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "dock-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "hyper-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "dock-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "avatar-circles-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "typing-animation-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "sparkles-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "spinning-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "scroll-based-velocity-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "scroll-based-velocity-images-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "spinning-text-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "comic-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "icon-cloud-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "icon-cloud-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "icon-cloud-demo-3": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-animate-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-animate-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-animate-demo-3": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-animate-demo-5": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-animate-demo-4": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-animate-demo-6": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-animate-demo-8": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-animate-demo-9": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "text-animate-demo-7": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "shiny-button-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-circular-progress-bar-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "shine-border-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "shine-border-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "confetti-random-direction": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "confetti-basic-cannon": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "confetti-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "confetti-fireworks": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "confetti-stars": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "confetti-custom-shapes": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "confetti-side-cannons": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "confetti-emoji": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "cool-mode-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "cool-mode-custom": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "pulsating-button-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "ripple-button-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "blur-fade-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "blur-fade-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "safari-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "file-tree-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "safari-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "safari-demo-3": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "safari-demo-4": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "rainbow-button-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "interactive-hover-button-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "rainbow-button-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "terminal-demo-2": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "terminal-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "video-text-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "pixel-image-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "highlighter-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "animated-theme-toggler-demo": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:example"
+  },
+  "utils": {
+    "lastPublished": "2025-09-15T05:26:49.000Z",
+    "type": "registry:lib"
+  }
+}

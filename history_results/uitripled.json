@@ -1,0 +1,626 @@
+{
+  "ai-glow-input": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:component"
+  },
+  "ai-chat-interface": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:component"
+  },
+  "ai-response-typing": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "about-us-section": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "about-us-page": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:page"
+  },
+  "ai-loading-skeleton": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "ai-unlock-animation": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:ui"
+  },
+  "animated-card-stack": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "animated-accordion": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "animated-dialog": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "animated-badge": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "animated-checkbox": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "animated-navbar": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "animated-pagination": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "animated-progress": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "animated-list": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "animated-quote-block": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:ui"
+  },
+  "animated-profile-menu": {
+    "lastPublished": "2025-12-03T10:15:45.000Z",
+    "type": "registry:component"
+  },
+  "animated-select": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "animated-sidebar": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "animated-radio": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "auto-revealing-heading": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:page"
+  },
+  "animated-tabs": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "animated-tooltip": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "avatar-group": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:component"
+  },
+  "blog-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "bento-grid-block": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:block"
+  },
+  "bottom-modal": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "blog-typography": {
+    "lastPublished": "2025-11-29T04:50:30.000Z",
+    "type": "registry:component"
+  },
+  "browse-folder": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "cards-slider": {
+    "lastPublished": "2025-12-03T21:44:30.000Z",
+    "type": "registry:component"
+  },
+  "chat-app": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:component"
+  },
+  "cash-flow-chart": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:ui"
+  },
+  "cinema-ticket": {
+    "lastPublished": "2025-12-02T19:41:08.000Z",
+    "type": "registry:component"
+  },
+  "comment-thread": {
+    "lastPublished": "2025-11-29T04:50:30.000Z",
+    "type": "registry:component"
+  },
+  "contact-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "conference-ticket": {
+    "lastPublished": "2025-12-02T19:41:08.000Z",
+    "type": "registry:component"
+  },
+  "command-palette": {
+    "lastPublished": "2025-11-29T20:00:40.000Z",
+    "type": "registry:component"
+  },
+  "contact-form-section": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:block"
+  },
+  "context-menu": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "context-menu-bubble": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "credit-card": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "course-content-page": {
+    "lastPublished": "2025-11-29T04:50:30.000Z",
+    "type": "registry:component"
+  },
+  "counter-up": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "cta-banner-section": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:page"
+  },
+  "cta-hero-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "cta-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "currency-converter-card": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "dashboard": {
+    "lastPublished": "2025-11-20T12:10:21.000Z",
+    "type": "registry:block"
+  },
+  "drag-to-confirm-slider": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:component"
+  },
+  "detail-task-card": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "draggable-list": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "dynamic-spotlight-cta": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:page"
+  },
+  "ecommerce-highlight-card": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "dynamic-tag-cloud": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "expanding-search-dock": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "elastic-switch": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "fade-slide-modal": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "faq-accordion-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "faq-section": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:page"
+  },
+  "feature-comparison-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "feature-grid-section": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:page"
+  },
+  "floating-gradient": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "floating-chat-widget": {
+    "lastPublished": "2025-12-03T10:28:15.000Z",
+    "type": "registry:component"
+  },
+  "floating-info-panel": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "feature-cards-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "floating-label-input": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "fluid-modal-transition": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "footer-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "glass-account-settings-card": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:component"
+  },
+  "glass-blog-card": {
+    "lastPublished": "2025-12-02T19:41:08.000Z",
+    "type": "registry:component"
+  },
+  "gallery-grid-block": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:block"
+  },
+  "glass-checkout-card": {
+    "lastPublished": "2025-12-02T12:47:20.000Z",
+    "type": "registry:component"
+  },
+  "glass-forgot-password-card": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "glass-order-summary": {
+    "lastPublished": "2025-12-02T12:47:20.000Z",
+    "type": "registry:component"
+  },
+  "glass-profile-settings-card": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "glass-sign-in-card": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "glass-sign-up-card": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "glass-verification-code-card": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "glassmorphism-cta-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "glassmorphism-launch-timeline-block": {
+    "lastPublished": "2025-11-29T20:00:40.000Z",
+    "type": "registry:block"
+  },
+  "glassmorphism-listen-app-block": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:block"
+  },
+  "glassmorphism-hero-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "glassmorphism-logo-showcase-block": {
+    "lastPublished": "2025-11-29T20:00:40.000Z",
+    "type": "registry:block"
+  },
+  "glass-wallet-card": {
+    "lastPublished": "2025-12-02T12:47:20.000Z",
+    "type": "registry:component"
+  },
+  "glassmorphism-minimal-metrics-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "glassmorphism-portfolio-block": {
+    "lastPublished": "2025-11-29T20:00:40.000Z",
+    "type": "registry:block"
+  },
+  "glassmorphism-product-update-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "glassmorphism-pricing-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "glassmorphism-statistics-card": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "glowy-waves-hero": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:block"
+  },
+  "gradient-animation": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "heart-favorite": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "hero-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "hero-section": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:page"
+  },
+  "glassmorphism-testimonials-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "holographic-wall": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:ui"
+  },
+  "hover-expand-card": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "interactive-logs-table": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:block"
+  },
+  "image-slider-card": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "interactive-timeline": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "kanban-board": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:block"
+  },
+  "liquid-cursor": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:ui"
+  },
+  "mac-searchbar": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:component"
+  },
+  "magnetic-avatar-group": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "magnetic-button": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "magnetic-cursor-link": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "messenger": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:component"
+  },
+  "minimal-resume": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:component"
+  },
+  "multiple-accounts": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:component"
+  },
+  "mood-gradient-button": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:ui"
+  },
+  "morphing-action-button": {
+    "lastPublished": "2025-12-03T10:15:45.000Z",
+    "type": "registry:ui"
+  },
+  "n8n-workflow-block": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:block"
+  },
+  "new-hero-section": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "news-feed": {
+    "lastPublished": "2025-11-29T04:52:02.000Z",
+    "type": "registry:component"
+  },
+  "newsletter-signup-block": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:block"
+  },
+  "notification-bell": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "notion-blog-page": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:block"
+  },
+  "notification-center": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:component"
+  },
+  "our-services-section": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "password-input": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "preview-details-card": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:ui"
+  },
+  "pricing-section": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:page"
+  },
+  "profile-page": {
+    "lastPublished": "2025-11-29T04:50:30.000Z",
+    "type": "registry:page"
+  },
+  "professional-resume": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:component"
+  },
+  "projects-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "reactive-background-grid": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:ui"
+  },
+  "ripple-click-button": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "resume-card": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:component"
+  },
+  "scale-hover-button": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "scroll-progress-tracker": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:page"
+  },
+  "services-grid-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "scroll-reveal": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:page"
+  },
+  "shimmer-button": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "simple-calendar": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "smart-hover-card": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "smart-tabs": {
+    "lastPublished": "2025-12-02T12:47:20.000Z",
+    "type": "registry:component"
+  },
+  "spotlight-section": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "stacked-card-carousel": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "staggered-dropdown": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:component"
+  },
+  "staggered-hero": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:page"
+  },
+  "standard-resume": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:component"
+  },
+  "stats-counter-block": {
+    "lastPublished": "2025-11-27T07:01:03.000Z",
+    "type": "registry:block"
+  },
+  "stats-section": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:page"
+  },
+  "team-section-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "stocks-dashboard": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:block"
+  },
+  "testimonial-section": {
+    "lastPublished": "2025-11-17T02:03:42.000Z",
+    "type": "registry:page"
+  },
+  "testimonials-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "timeline-block": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:block"
+  },
+  "theater-ticket": {
+    "lastPublished": "2025-12-02T19:41:08.000Z",
+    "type": "registry:component"
+  },
+  "toast-notification": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:page"
+  },
+  "typewriter-text": {
+    "lastPublished": "2025-11-16T23:52:58.000Z",
+    "type": "registry:ui"
+  },
+  "web-performance-page": {
+    "lastPublished": "2025-11-29T04:50:30.000Z",
+    "type": "registry:component"
+  },
+  "weather-dashboard": {
+    "lastPublished": "2025-11-17T21:36:20.000Z",
+    "type": "registry:component"
+  },
+  "wizard-form": {
+    "lastPublished": "2025-11-29T04:50:30.000Z",
+    "type": "registry:component"
+  },
+  "volume-component": {
+    "lastPublished": "2025-12-03T21:44:30.000Z",
+    "type": "registry:component"
+  }
+}

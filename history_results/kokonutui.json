@@ -1,0 +1,162 @@
+{
+  "smooth-drawer": {
+    "lastPublished": "2025-10-27T08:35:14.000Z",
+    "type": "registry:component"
+  },
+  "card-flip": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "ai-text-loading": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "shape-hero": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "command-button": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "file-upload": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "shimmer-text": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "carousel-cards": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "ai-input-search": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "currency-transfer": {
+    "lastPublished": "2025-10-27T12:15:49.000Z",
+    "type": "registry:component"
+  },
+  "beams-background": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "background-paths": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "action-search-bar": {
+    "lastPublished": "2025-08-16T03:52:12.000Z",
+    "type": "registry:component"
+  },
+  "apple-activity-card": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "ai-voice": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "smooth-tab": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "ai-prompt": {
+    "lastPublished": "2025-11-21T16:11:35.000Z",
+    "type": "registry:component"
+  },
+  "team-selector": {
+    "lastPublished": "2025-11-25T10:32:04.000Z",
+    "type": "registry:component"
+  },
+  "switch-button": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "social-button": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "hold-button": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "attract-button": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "v0-button": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "gradient-button": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "toolbar": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "ai-loading": {
+    "lastPublished": "2025-08-05T12:12:58.000Z",
+    "type": "registry:component"
+  },
+  "card-stack": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "avatar-picker": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "type-writer": {
+    "lastPublished": "2025-11-22T13:59:50.000Z",
+    "type": "registry:component"
+  },
+  "swoosh-text": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "glitch-text": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "sliced-text": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "matrix-text": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "particle-button": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "scroll-text": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "tweet-card": {
+    "lastPublished": "2025-10-04T11:26:10.000Z",
+    "type": "registry:component"
+  },
+  "dynamic-text": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  },
+  "profile-dropdown": {
+    "lastPublished": "2025-08-19T07:19:16.000Z",
+    "type": "registry:component"
+  },
+  "liquid-glass-card": {
+    "lastPublished": "2025-10-11T16:31:32.000Z",
+    "type": "registry:component"
+  },
+  "bento-grid": {
+    "lastPublished": "2025-06-27T06:20:06.000Z",
+    "type": "registry:component"
+  }
+}

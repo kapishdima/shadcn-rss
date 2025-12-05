@@ -1,0 +1,134 @@
+{
+  "accordion": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  },
+  "animated-number": {
+    "lastPublished": "2025-01-09T15:15:18.000Z",
+    "type": "registry:ui"
+  },
+  "carousel": {
+    "lastPublished": "2025-01-23T17:02:26.000Z",
+    "type": "registry:ui"
+  },
+  "animated-group": {
+    "lastPublished": "2025-03-19T10:48:26.000Z",
+    "type": "registry:ui"
+  },
+  "border-trail": {
+    "lastPublished": "2025-01-17T17:20:23.000Z",
+    "type": "registry:ui"
+  },
+  "animated-background": {
+    "lastPublished": "2025-01-09T15:15:18.000Z",
+    "type": "registry:ui"
+  },
+  "in-view": {
+    "lastPublished": "2025-06-04T10:34:07.000Z",
+    "type": "registry:ui"
+  },
+  "cursor": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  },
+  "infinite-slider": {
+    "lastPublished": "2025-02-26T09:07:12.000Z",
+    "type": "registry:ui"
+  },
+  "disclosure": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  },
+  "transition-panel": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  },
+  "text-effect": {
+    "lastPublished": "2025-06-04T10:34:07.000Z",
+    "type": "registry:ui"
+  },
+  "text-loop": {
+    "lastPublished": "2025-01-17T17:20:23.000Z",
+    "type": "registry:ui"
+  },
+  "dialog": {
+    "lastPublished": "2025-01-24T16:42:07.000Z",
+    "type": "registry:ui"
+  },
+  "text-roll": {
+    "lastPublished": "2025-01-17T17:20:23.000Z",
+    "type": "registry:ui"
+  },
+  "text-scramble": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  },
+  "text-morph": {
+    "lastPublished": "2025-02-26T09:07:12.000Z",
+    "type": "registry:ui"
+  },
+  "text-shimmer-wave": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  },
+  "magnetic": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  },
+  "text-shimmer": {
+    "lastPublished": "2025-03-19T10:48:26.000Z",
+    "type": "registry:ui"
+  },
+  "dock": {
+    "lastPublished": "2025-06-04T10:33:16.000Z",
+    "type": "registry:ui"
+  },
+  "morphing-dialog": {
+    "lastPublished": "2025-03-19T10:48:26.000Z",
+    "type": "registry:ui"
+  },
+  "glow-effect": {
+    "lastPublished": "2025-01-23T17:02:26.000Z",
+    "type": "registry:ui"
+  },
+  "image-comparison": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  },
+  "morphing-popover": {
+    "lastPublished": "2025-02-17T09:37:41.000Z",
+    "type": "registry:ui"
+  },
+  "toolbar-dynamic": {
+    "lastPublished": "2025-01-23T17:02:26.000Z",
+    "type": "registry:ui"
+  },
+  "progressive-blur": {
+    "lastPublished": "2025-06-04T10:34:28.000Z",
+    "type": "registry:ui"
+  },
+  "scroll-progress": {
+    "lastPublished": "2025-01-13T08:05:44.000Z",
+    "type": "registry:ui"
+  },
+  "sliding-number": {
+    "lastPublished": "2025-09-17T09:27:51.000Z",
+    "type": "registry:ui"
+  },
+  "toolbar-expandable": {
+    "lastPublished": "2025-01-23T17:02:26.000Z",
+    "type": "registry:ui"
+  },
+  "spinning-text": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  },
+  "spotlight": {
+    "lastPublished": "2025-06-04T10:32:55.000Z",
+    "type": "registry:ui"
+  },
+  "tilt": {
+    "lastPublished": "2025-01-09T15:25:28.000Z",
+    "type": "registry:ui"
+  }
+}

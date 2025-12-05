@@ -1,0 +1,38 @@
+{
+  "checkout-01": {
+    "lastPublished": "2025-11-13T01:18:45.000Z",
+    "type": "registry:block"
+  },
+  "cart-02": {
+    "lastPublished": "2025-11-12T22:08:26.000Z",
+    "type": "registry:block"
+  },
+  "cart-01": {
+    "lastPublished": "2025-11-12T22:08:26.000Z",
+    "type": "registry:block"
+  },
+  "order-01": {
+    "lastPublished": "2025-11-12T22:08:26.000Z",
+    "type": "registry:block"
+  },
+  "product-card-01": {
+    "lastPublished": "2025-11-12T22:08:26.000Z",
+    "type": "registry:block"
+  },
+  "product-card-02": {
+    "lastPublished": "2025-11-12T22:08:26.000Z",
+    "type": "registry:block"
+  },
+  "review-01": {
+    "lastPublished": "2025-11-12T22:08:26.000Z",
+    "type": "registry:block"
+  },
+  "product-card-03": {
+    "lastPublished": "2025-11-12T22:08:26.000Z",
+    "type": "registry:block"
+  },
+  "product-detail-01": {
+    "lastPublished": "2025-11-12T22:08:26.000Z",
+    "type": "registry:block"
+  }
+}

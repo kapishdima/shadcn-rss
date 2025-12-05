@@ -1,0 +1,226 @@
+{
+  "anthropic-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "apple-logo": {
+    "lastPublished": "2025-11-24T06:30:59.000Z",
+    "type": "registry:ui"
+  },
+  "bun-logo": {
+    "lastPublished": "2025-11-24T06:30:59.000Z",
+    "type": "registry:ui"
+  },
+  "better-auth-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "claude-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "aws-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "deepseek-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "gemini-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "cohere-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "crafter-station-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "discord-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "clerk-logo": {
+    "lastPublished": "2025-11-16T22:09:40.000Z",
+    "type": "registry:ui"
+  },
+  "grok-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "github-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "groq-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "gitlab-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "google-logo": {
+    "lastPublished": "2025-11-24T06:30:59.000Z",
+    "type": "registry:ui"
+  },
+  "hugging-face-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "kebo-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "meta-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "kimi-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "lovable-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "linear-logo": {
+    "lastPublished": "2025-11-24T08:21:17.000Z",
+    "type": "registry:block"
+  },
+  "microsoft-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "npm-logo": {
+    "lastPublished": "2025-11-24T06:30:59.000Z",
+    "type": "registry:ui"
+  },
+  "notion-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "moonshot-ai-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "openai-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "perplexity-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "mistral-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "polar-logo": {
+    "lastPublished": "2025-10-23T06:44:33.000Z",
+    "type": "registry:ui"
+  },
+  "pnpm-logo": {
+    "lastPublished": "2025-11-24T06:30:59.000Z",
+    "type": "registry:ui"
+  },
+  "qwen-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "resend-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "slack-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "stripe-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "spotify-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "supabase-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "theme-switcher-button": {
+    "lastPublished": "2025-10-24T02:14:34.000Z",
+    "type": "registry:ui"
+  },
+  "theme-switcher-dropdown": {
+    "lastPublished": "2025-10-25T04:19:30.000Z",
+    "type": "registry:ui"
+  },
+  "theme-switcher-classic": {
+    "lastPublished": "2025-10-25T04:19:30.000Z",
+    "type": "registry:ui"
+  },
+  "polar-sponsorship": {
+    "lastPublished": "2025-11-17T06:04:04.000Z",
+    "type": "registry:block"
+  },
+  "theme-switcher-switch": {
+    "lastPublished": "2025-10-25T04:19:30.000Z",
+    "type": "registry:ui"
+  },
+  "theme-switcher-multi-button": {
+    "lastPublished": "2025-10-25T04:19:30.000Z",
+    "type": "registry:ui"
+  },
+  "tinte-logo": {
+    "lastPublished": "2025-10-23T06:44:33.000Z",
+    "type": "registry:ui"
+  },
+  "twitch-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "twitter-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "theme-switcher-toggle": {
+    "lastPublished": "2025-10-25T04:19:30.000Z",
+    "type": "registry:ui"
+  },
+  "upstash-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "v0-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "vercel-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "xai-logo": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "yarn-logo": {
+    "lastPublished": "2025-11-24T06:30:59.000Z",
+    "type": "registry:ui"
+  },
+  "uploadthing-button": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:ui"
+  },
+  "uploadthing-dropzone": {
+    "lastPublished": "2025-10-23T06:36:28.000Z",
+    "type": "registry:block"
+  },
+  "tinte-editor": {
+    "lastPublished": "2025-10-25T04:19:30.000Z",
+    "type": "registry:block"
+  }
+}

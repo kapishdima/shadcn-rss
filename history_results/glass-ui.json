@@ -1,0 +1,198 @@
+{
+  "card": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "input": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "button": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "label": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "textarea": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "badge": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "avatar": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "alert-dialog": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "separator": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "dialog": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "switch": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "checkbox": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "tooltip": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "popover": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "tabs": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "select": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "radio-group": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "accordion": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "skeleton": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "calendar": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "chart": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "alert": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "command": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "collapsible": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "cropper": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "drawer": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "input-otp": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "hover-card": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "pagination": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "scroll-area": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "sheet": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "sidebar": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "slider": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "table": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "sonner": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "toggle": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "toggle-group": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "mode-toggle": {
+    "lastPublished": "2025-11-19T17:11:06.000Z",
+    "type": "registry:component"
+  },
+  "button-group": {
+    "lastPublished": "2025-11-28T05:28:34.000Z",
+    "type": "registry:component"
+  },
+  "spinner": {
+    "lastPublished": "2025-11-28T05:28:34.000Z",
+    "type": "registry:component"
+  },
+  "input-group": {
+    "lastPublished": "2025-11-28T05:28:34.000Z",
+    "type": "registry:component"
+  },
+  "empty-state": {
+    "lastPublished": "2025-11-28T05:28:34.000Z",
+    "type": "registry:component"
+  },
+  "menu-bar": {
+    "lastPublished": "2025-11-28T05:28:34.000Z",
+    "type": "registry:component"
+  },
+  "date-picker-input": {
+    "lastPublished": "2025-11-28T05:28:34.000Z",
+    "type": "registry:component"
+  },
+  "context-menu": {
+    "lastPublished": "2025-11-28T05:28:34.000Z",
+    "type": "registry:component"
+  },
+  "carousel": {
+    "lastPublished": "2025-11-28T05:28:34.000Z",
+    "type": "registry:component"
+  }
+}

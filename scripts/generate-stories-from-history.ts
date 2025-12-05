@@ -26,7 +26,6 @@ const TARGET_YEAR = 2025;
 const HISTORY_DIR = path.join(
   path.dirname(fileURLToPath(import.meta.url)),
   "..",
-  "data",
   "history_results"
 );
 

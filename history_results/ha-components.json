@@ -1,0 +1,50 @@
+{
+  "light": {
+    "lastPublished": "2025-10-11T12:24:07.000Z",
+    "type": "registry:component"
+  },
+  "trigger": {
+    "lastPublished": "2025-10-03T06:31:36.000Z",
+    "type": "registry:component"
+  },
+  "type-generator": {
+    "lastPublished": "2025-10-11T10:53:30.000Z",
+    "type": "registry:item"
+  },
+  "toggle": {
+    "lastPublished": "2025-10-04T04:19:40.000Z",
+    "type": "registry:component"
+  },
+  "camera": {
+    "lastPublished": "2025-10-11T13:53:10.000Z",
+    "type": "registry:block"
+  },
+  "weather": {
+    "lastPublished": "2025-10-13T09:45:17.000Z",
+    "type": "registry:block"
+  },
+  "popover": {
+    "lastPublished": "2025-10-04T14:21:46.000Z",
+    "type": "registry:ui"
+  },
+  "accordion": {
+    "lastPublished": "2025-10-11T12:24:07.000Z",
+    "type": "registry:ui"
+  },
+  "slider": {
+    "lastPublished": "2025-10-04T14:21:46.000Z",
+    "type": "registry:ui"
+  },
+  "switch": {
+    "lastPublished": "2025-10-04T14:21:46.000Z",
+    "type": "registry:ui"
+  },
+  "auth": {
+    "lastPublished": "2025-10-14T02:48:03.000Z",
+    "type": "registry:block"
+  },
+  "proxy": {
+    "lastPublished": "2025-10-04T13:33:30.000Z",
+    "type": "registry:block"
+  }
+}

@@ -1,0 +1,278 @@
+{
+  "command-menu-01": {
+    "lastPublished": "2025-12-02T19:13:11.000Z",
+    "type": "registry:block"
+  },
+  "command-menu-02": {
+    "lastPublished": "2025-12-02T19:25:01.000Z",
+    "type": "registry:block"
+  },
+  "ai-01": {
+    "lastPublished": "2025-09-02T02:49:49.000Z",
+    "type": "registry:block"
+  },
+  "ai-03": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "ai-04": {
+    "lastPublished": "2025-09-02T15:21:26.000Z",
+    "type": "registry:block"
+  },
+  "ai-02": {
+    "lastPublished": "2025-09-01T22:10:23.000Z",
+    "type": "registry:block"
+  },
+  "dialog-01": {
+    "lastPublished": "2025-04-09T10:44:34.000Z",
+    "type": "registry:block"
+  },
+  "dialog-04": {
+    "lastPublished": "2025-04-09T10:44:34.000Z",
+    "type": "registry:block"
+  },
+  "command-menu-03": {
+    "lastPublished": "2025-12-02T19:25:01.000Z",
+    "type": "registry:block"
+  },
+  "dialog-02": {
+    "lastPublished": "2025-04-09T10:44:34.000Z",
+    "type": "registry:block"
+  },
+  "dialog-05": {
+    "lastPublished": "2025-04-09T10:44:34.000Z",
+    "type": "registry:block"
+  },
+  "dialog-03": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "dialog-06": {
+    "lastPublished": "2025-04-09T10:44:34.000Z",
+    "type": "registry:block"
+  },
+  "dialog-10": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "dialog-08": {
+    "lastPublished": "2025-04-09T14:43:19.000Z",
+    "type": "registry:block"
+  },
+  "dialog-09": {
+    "lastPublished": "2025-04-09T10:44:34.000Z",
+    "type": "registry:block"
+  },
+  "dialog-07": {
+    "lastPublished": "2025-04-09T10:44:34.000Z",
+    "type": "registry:block"
+  },
+  "dialog-12": {
+    "lastPublished": "2025-04-16T13:47:52.000Z",
+    "type": "registry:block"
+  },
+  "file-upload-01": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "dialog-11": {
+    "lastPublished": "2025-04-09T10:44:34.000Z",
+    "type": "registry:block"
+  },
+  "file-upload-02": {
+    "lastPublished": "2025-04-15T16:13:38.000Z",
+    "type": "registry:block"
+  },
+  "file-upload-03": {
+    "lastPublished": "2025-04-17T19:27:36.000Z",
+    "type": "registry:block"
+  },
+  "file-upload-04": {
+    "lastPublished": "2025-04-15T16:13:38.000Z",
+    "type": "registry:block"
+  },
+  "file-upload-05": {
+    "lastPublished": "2025-04-15T16:13:38.000Z",
+    "type": "registry:block"
+  },
+  "form-layout-01": {
+    "lastPublished": "2025-12-02T20:08:25.000Z",
+    "type": "registry:block"
+  },
+  "file-upload-06": {
+    "lastPublished": "2025-08-23T23:55:27.000Z",
+    "type": "registry:block"
+  },
+  "form-layout-02": {
+    "lastPublished": "2025-12-02T20:08:25.000Z",
+    "type": "registry:block"
+  },
+  "form-layout-04": {
+    "lastPublished": "2025-12-02T20:08:25.000Z",
+    "type": "registry:block"
+  },
+  "form-layout-03": {
+    "lastPublished": "2025-12-02T20:08:25.000Z",
+    "type": "registry:block"
+  },
+  "form-layout-05": {
+    "lastPublished": "2025-12-02T20:08:25.000Z",
+    "type": "registry:block"
+  },
+  "grid-list-01": {
+    "lastPublished": "2025-04-04T19:25:15.000Z",
+    "type": "registry:block"
+  },
+  "grid-list-02": {
+    "lastPublished": "2025-04-09T14:43:19.000Z",
+    "type": "registry:block"
+  },
+  "login-01": {
+    "lastPublished": "2025-04-08T15:41:35.000Z",
+    "type": "registry:block"
+  },
+  "login-02": {
+    "lastPublished": "2025-04-08T15:41:35.000Z",
+    "type": "registry:block"
+  },
+  "grid-list-03": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "login-03": {
+    "lastPublished": "2025-04-05T05:22:12.000Z",
+    "type": "registry:block"
+  },
+  "login-05": {
+    "lastPublished": "2025-04-08T15:41:35.000Z",
+    "type": "registry:block"
+  },
+  "login-06": {
+    "lastPublished": "2025-04-08T15:41:35.000Z",
+    "type": "registry:block"
+  },
+  "login-07": {
+    "lastPublished": "2025-04-08T15:41:35.000Z",
+    "type": "registry:block"
+  },
+  "login-04": {
+    "lastPublished": "2025-04-08T15:41:35.000Z",
+    "type": "registry:block"
+  },
+  "login-08": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "login-09": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "onboarding-01": {
+    "lastPublished": "2025-12-02T13:58:13.000Z",
+    "type": "registry:block"
+  },
+  "sidebar-05": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "sidebar-04": {
+    "lastPublished": "2025-08-31T11:53:11.000Z",
+    "type": "registry:block"
+  },
+  "sidebar-06": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "stats-01": {
+    "lastPublished": "2025-04-05T05:22:12.000Z",
+    "type": "registry:block"
+  },
+  "stats-02": {
+    "lastPublished": "2025-04-05T05:22:12.000Z",
+    "type": "registry:block"
+  },
+  "stats-03": {
+    "lastPublished": "2025-04-05T07:24:19.000Z",
+    "type": "registry:block"
+  },
+  "stats-05": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "stats-04": {
+    "lastPublished": "2025-04-05T07:24:19.000Z",
+    "type": "registry:block"
+  },
+  "stats-06": {
+    "lastPublished": "2025-04-05T05:22:12.000Z",
+    "type": "registry:block"
+  },
+  "sidebar-01": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "sidebar-02": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "sidebar-03": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "stats-07": {
+    "lastPublished": "2025-04-05T05:22:12.000Z",
+    "type": "registry:block"
+  },
+  "stats-08": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "stats-09": {
+    "lastPublished": "2025-04-05T05:22:12.000Z",
+    "type": "registry:block"
+  },
+  "stats-10": {
+    "lastPublished": "2025-04-05T05:22:12.000Z",
+    "type": "registry:block"
+  },
+  "stats-11": {
+    "lastPublished": "2025-08-30T09:52:39.000Z",
+    "type": "registry:block"
+  },
+  "stats-12": {
+    "lastPublished": "2025-09-02T02:53:44.000Z",
+    "type": "registry:block"
+  },
+  "stats-13": {
+    "lastPublished": "2025-11-30T16:05:37.000Z",
+    "type": "registry:block"
+  },
+  "stats-14": {
+    "lastPublished": "2025-12-02T15:01:20.000Z",
+    "type": "registry:block"
+  },
+  "table-01": {
+    "lastPublished": "2025-11-28T02:37:20.000Z",
+    "type": "registry:block"
+  },
+  "table-02": {
+    "lastPublished": "2025-10-20T10:13:08.000Z",
+    "type": "registry:block"
+  },
+  "table-03": {
+    "lastPublished": "2025-11-27T20:35:48.000Z",
+    "type": "registry:block"
+  },
+  "stats-15": {
+    "lastPublished": "2025-12-02T15:48:10.000Z",
+    "type": "registry:block"
+  },
+  "table-05": {
+    "lastPublished": "2025-11-28T02:37:20.000Z",
+    "type": "registry:block"
+  },
+  "table-04": {
+    "lastPublished": "2025-11-28T02:37:20.000Z",
+    "type": "registry:block"
+  }
+}

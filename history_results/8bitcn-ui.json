@@ -1,0 +1,294 @@
+{
+  "toast": {
+    "lastPublished": "2025-05-30T21:48:24.000Z",
+    "type": "registry:component"
+  },
+  "badge": {
+    "lastPublished": "2025-10-30T14:25:51.000Z",
+    "type": "registry:component"
+  },
+  "input-otp": {
+    "lastPublished": "2025-05-30T21:54:36.000Z",
+    "type": "registry:component"
+  },
+  "input": {
+    "lastPublished": "2025-05-30T21:54:36.000Z",
+    "type": "registry:component"
+  },
+  "button": {
+    "lastPublished": "2025-09-23T21:26:31.000Z",
+    "type": "registry:component"
+  },
+  "chapter-intro": {
+    "lastPublished": "2025-08-17T23:02:17.000Z",
+    "type": "registry:block"
+  },
+  "dialog": {
+    "lastPublished": "2025-05-30T21:48:24.000Z",
+    "type": "registry:component"
+  },
+  "carousel": {
+    "lastPublished": "2025-05-30T21:26:42.000Z",
+    "type": "registry:component"
+  },
+  "calendar": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "textarea": {
+    "lastPublished": "2025-08-12T19:16:59.000Z",
+    "type": "registry:component"
+  },
+  "card": {
+    "lastPublished": "2025-05-30T21:54:36.000Z",
+    "type": "registry:component"
+  },
+  "dropdown-menu": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "popover": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "select": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "resizable": {
+    "lastPublished": "2025-05-30T21:26:42.000Z",
+    "type": "registry:component"
+  },
+  "sheet": {
+    "lastPublished": "2025-05-30T21:54:36.000Z",
+    "type": "registry:component"
+  },
+  "hover-card": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "label": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "scroll-area": {
+    "lastPublished": "2025-05-30T21:26:42.000Z",
+    "type": "registry:component"
+  },
+  "switch": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "checkbox": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "alert-dialog": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "alert": {
+    "lastPublished": "2025-08-17T23:02:17.000Z",
+    "type": "registry:component"
+  },
+  "tooltip": {
+    "lastPublished": "2025-09-21T11:10:36.000Z",
+    "type": "registry:component"
+  },
+  "avatar": {
+    "lastPublished": "2025-11-12T12:35:50.000Z",
+    "type": "registry:component"
+  },
+  "skeleton": {
+    "lastPublished": "2025-05-30T21:48:24.000Z",
+    "type": "registry:component"
+  },
+  "collapsible": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "breadcrumb": {
+    "lastPublished": "2025-05-30T21:54:36.000Z",
+    "type": "registry:component"
+  },
+  "progress": {
+    "lastPublished": "2025-09-10T14:57:31.000Z",
+    "type": "registry:component"
+  },
+  "profile-card": {
+    "lastPublished": "2025-11-12T12:35:50.000Z",
+    "type": "registry:component"
+  },
+  "game-progress": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "slider": {
+    "lastPublished": "2025-05-30T21:26:42.000Z",
+    "type": "registry:component"
+  },
+  "health-bar": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "dialogue": {
+    "lastPublished": "2025-11-12T12:35:50.000Z",
+    "type": "registry:block"
+  },
+  "mana-bar": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "context-menu": {
+    "lastPublished": "2025-05-30T21:48:24.000Z",
+    "type": "registry:component"
+  },
+  "combo-box": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "enemy-health-display": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "tabs": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "toggle": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "table": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "menubar": {
+    "lastPublished": "2025-05-30T21:48:24.000Z",
+    "type": "registry:component"
+  },
+  "separator": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "radio-group": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "pagination": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "login-form-2": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "login-form": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "command": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "login-form-with-image": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "login-page": {
+    "lastPublished": "2025-11-28T08:08:56.000Z",
+    "type": "registry:page"
+  },
+  "main-menu": {
+    "lastPublished": "2025-09-23T21:26:31.000Z",
+    "type": "registry:block"
+  },
+  "pause-menu": {
+    "lastPublished": "2025-09-23T21:26:31.000Z",
+    "type": "registry:block"
+  },
+  "chart-bar": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "game-over": {
+    "lastPublished": "2025-09-23T21:26:31.000Z",
+    "type": "registry:block"
+  },
+  "chart-area-step": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "chart": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "toggle-group": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "audio-settings": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "sidebar": {
+    "lastPublished": "2025-05-30T21:48:24.000Z",
+    "type": "registry:block"
+  },
+  "accordion": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "navigation-menu": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "drawer": {
+    "lastPublished": "2025-09-18T20:27:06.000Z",
+    "type": "registry:component"
+  },
+  "difficulty-select": {
+    "lastPublished": "2025-09-23T21:26:31.000Z",
+    "type": "registry:block"
+  },
+  "leaderboard": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "quest-log": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "player-profile-card": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:block"
+  },
+  "spinner": {
+    "lastPublished": "2025-11-25T09:29:29.000Z",
+    "type": "registry:component"
+  },
+  "kbd": {
+    "lastPublished": "2025-10-07T08:31:33.000Z",
+    "type": "registry:component"
+  },
+  "empty": {
+    "lastPublished": "2025-11-08T21:10:25.000Z",
+    "type": "registry:component"
+  },
+  "item": {
+    "lastPublished": "2025-11-24T12:47:18.000Z",
+    "type": "registry:component"
+  },
+  "retro-mode-switcher": {
+    "lastPublished": "2025-11-28T08:08:56.000Z",
+    "type": "registry:component"
+  },
+  "theme-selector": {
+    "lastPublished": "2025-11-28T08:08:56.000Z",
+    "type": "registry:component"
+  },
+  "dashboard-01": {
+    "lastPublished": "2025-11-28T08:08:56.000Z",
+    "type": "registry:page"
+  }
+}

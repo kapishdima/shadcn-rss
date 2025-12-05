@@ -1,0 +1,558 @@
+{
+  "aspect-ratio": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "avatar": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "alert-dialog": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "accordion": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "alert": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "badge": {
+    "lastPublished": "2025-11-09T07:25:25.000Z",
+    "type": "registry:ui"
+  },
+  "breadcrumb": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "button-group": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "card": {
+    "lastPublished": "2025-11-25T08:04:07.000Z",
+    "type": "registry:ui"
+  },
+  "button": {
+    "lastPublished": "2025-11-24T15:42:38.000Z",
+    "type": "registry:ui"
+  },
+  "calendar": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "checkbox": {
+    "lastPublished": "2025-11-29T09:10:17.000Z",
+    "type": "registry:ui"
+  },
+  "carousel": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "command-menu": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "collapsible": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "dialog": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "context-menu": {
+    "lastPublished": "2025-11-10T11:56:48.000Z",
+    "type": "registry:ui"
+  },
+  "drawer": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "field": {
+    "lastPublished": "2025-11-29T07:18:36.000Z",
+    "type": "registry:ui"
+  },
+  "input": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "hover-card": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "dropdown-menu": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "empty": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "input-group": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "input-otp": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "item": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "label": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "menubar": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "navigation-menu": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "pagination": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "popover": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "radio-group": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "progress": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "resizable": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "scroll-area": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "sidebar": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "select": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "separator": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "sheet": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "skeleton": {
+    "lastPublished": "2025-11-29T07:07:15.000Z",
+    "type": "registry:ui"
+  },
+  "slider": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "sonner": {
+    "lastPublished": "2025-11-24T17:06:34.000Z",
+    "type": "registry:ui"
+  },
+  "spinner": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "table": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "tabs": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "switch": {
+    "lastPublished": "2025-11-09T05:41:00.000Z",
+    "type": "registry:ui"
+  },
+  "textarea": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "toggle": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "toggle-group": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "kbd": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "native-select": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "tree": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "video-player": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "ai-chat-history": {
+    "lastPublished": "2025-11-25T06:39:36.000Z",
+    "type": "registry:ui"
+  },
+  "tooltip": {
+    "lastPublished": "2025-11-05T07:30:36.000Z",
+    "type": "registry:ui"
+  },
+  "ai-conversation": {
+    "lastPublished": "2025-11-24T14:39:02.000Z",
+    "type": "registry:ui"
+  },
+  "ai-citations": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "ai-error-handler": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "ai-file-upload": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "ai-message": {
+    "lastPublished": "2025-11-25T06:39:36.000Z",
+    "type": "registry:ui"
+  },
+  "ai-prompt-input": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "ai-model-selector": {
+    "lastPublished": "2025-11-24T15:38:03.000Z",
+    "type": "registry:ui"
+  },
+  "ai-prompt-templates": {
+    "lastPublished": "2025-11-29T09:18:21.000Z",
+    "type": "registry:ui"
+  },
+  "ai-settings-panel": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "ai-streaming-response": {
+    "lastPublished": "2025-11-09T08:41:20.000Z",
+    "type": "registry:ui"
+  },
+  "ai-suggested-prompts": {
+    "lastPublished": "2025-11-29T09:18:21.000Z",
+    "type": "registry:ui"
+  },
+  "ai-thinking": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "ai-usage-quota": {
+    "lastPublished": "2025-11-25T08:04:07.000Z",
+    "type": "registry:ui"
+  },
+  "auth-account-delete": {
+    "lastPublished": "2025-11-29T09:25:36.000Z",
+    "type": "registry:ui"
+  },
+  "auth-email-change": {
+    "lastPublished": "2025-11-29T09:04:58.000Z",
+    "type": "registry:ui"
+  },
+  "auth-change-password": {
+    "lastPublished": "2025-11-29T07:42:43.000Z",
+    "type": "registry:ui"
+  },
+  "auth-forgot-password": {
+    "lastPublished": "2025-11-29T07:42:43.000Z",
+    "type": "registry:ui"
+  },
+  "auth-login-form": {
+    "lastPublished": "2025-11-29T07:42:43.000Z",
+    "type": "registry:ui"
+  },
+  "auth-magic-link": {
+    "lastPublished": "2025-11-29T09:13:12.000Z",
+    "type": "registry:ui"
+  },
+  "auth-recovery-codes": {
+    "lastPublished": "2025-11-29T09:20:54.000Z",
+    "type": "registry:ui"
+  },
+  "auth-phone-verify": {
+    "lastPublished": "2025-11-29T08:35:11.000Z",
+    "type": "registry:ui"
+  },
+  "auth-reset-password": {
+    "lastPublished": "2025-11-29T08:41:48.000Z",
+    "type": "registry:ui"
+  },
+  "auth-otp-verify": {
+    "lastPublished": "2025-11-29T07:42:53.000Z",
+    "type": "registry:ui"
+  },
+  "auth-session-manager": {
+    "lastPublished": "2025-11-29T08:44:16.000Z",
+    "type": "registry:ui"
+  },
+  "auth-signup-form": {
+    "lastPublished": "2025-11-29T08:47:30.000Z",
+    "type": "registry:ui"
+  },
+  "auth-social-accounts": {
+    "lastPublished": "2025-11-29T08:49:29.000Z",
+    "type": "registry:ui"
+  },
+  "auth-two-factor-setup": {
+    "lastPublished": "2025-11-29T09:20:54.000Z",
+    "type": "registry:ui"
+  },
+  "auth-verify-email": {
+    "lastPublished": "2025-11-29T09:01:05.000Z",
+    "type": "registry:ui"
+  },
+  "auth-two-factor-verify": {
+    "lastPublished": "2025-11-29T09:25:36.000Z",
+    "type": "registry:ui"
+  },
+  "billing-billing-history": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "billing-invoice-details": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "billing-invoice-list": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "billing-payment-form": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "billing-payment-failed": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "billing-coupon-code": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "billing-payment-method": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "billing-payment-schedule": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "billing-plan-selector": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "billing-subscription-card": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "billing-subscription-settings": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "billing-upgrade-prompt": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "billing-usage-alerts": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "billing-usage-billing": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "billing-pricing-table": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-account": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-activity-log": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-advanced": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-api-keys": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-backup": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-export-data": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-domains": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-import-data": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-integrations": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-preferences": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-privacy": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-profile": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-security": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-notifications": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-sso": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-team-members": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-storage": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "settings-webhooks": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-activity-feed": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-ai-room": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-analytics": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "team-dashboard": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-chat": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-files": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "team-invitations": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-member-list": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "team-notes": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-permissions-matrix": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-notifications": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-projects": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-prompt-library": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "team-switcher": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "team-settings": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "task-board": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "task-filters": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "task-create": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "task-detail": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "task-list": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  },
+  "task-progress": {
+    "lastPublished": "2025-11-24T12:30:31.000Z",
+    "type": "registry:ui"
+  },
+  "project-list": {
+    "lastPublished": "2025-11-25T07:20:19.000Z",
+    "type": "registry:ui"
+  }
+}

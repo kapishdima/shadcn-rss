@@ -1,0 +1,2006 @@
+{
+  "keyboard": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "note": {
+    "lastPublished": "2025-10-24T22:30:25.000Z",
+    "type": "registry:ui"
+  },
+  "navbar": {
+    "lastPublished": "2025-11-28T05:56:36.000Z",
+    "type": "registry:ui"
+  },
+  "area-chart": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:ui"
+  },
+  "tag-field": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "show-more": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "bar-chart": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:ui"
+  },
+  "date-range-picker": {
+    "lastPublished": "2025-11-08T16:16:19.000Z",
+    "type": "registry:ui"
+  },
+  "list-box": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "bar-list": {
+    "lastPublished": "2025-11-03T19:12:50.000Z",
+    "type": "registry:ui"
+  },
+  "pagination": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "link": {
+    "lastPublished": "2025-10-24T13:11:57.000Z",
+    "type": "registry:ui"
+  },
+  "button-group": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "tabs": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "pie-chart": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:ui"
+  },
+  "card": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "slider": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "popover": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "text-field": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "radio": {
+    "lastPublished": "2025-11-08T16:16:19.000Z",
+    "type": "registry:ui"
+  },
+  "date-field": {
+    "lastPublished": "2025-11-08T08:39:51.000Z",
+    "type": "registry:ui"
+  },
+  "loader": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "disclosure-group": {
+    "lastPublished": "2025-10-24T13:09:06.000Z",
+    "type": "registry:ui"
+  },
+  "date-picker": {
+    "lastPublished": "2025-11-28T05:56:36.000Z",
+    "type": "registry:ui"
+  },
+  "input-otp": {
+    "lastPublished": "2025-11-08T08:37:09.000Z",
+    "type": "registry:ui"
+  },
+  "chart": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:ui"
+  },
+  "container": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "tag-group": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "sheet": {
+    "lastPublished": "2025-11-13T02:09:58.000Z",
+    "type": "registry:ui"
+  },
+  "field": {
+    "lastPublished": "2025-11-08T08:37:09.000Z",
+    "type": "registry:ui"
+  },
+  "meter": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "drop-zone": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "toolbar": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "color-slider": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "scroll-area": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:ui"
+  },
+  "breadcrumbs": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "color-thumb": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "tooltip": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "drawer": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "file-trigger": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "time-field": {
+    "lastPublished": "2025-11-01T19:50:06.000Z",
+    "type": "registry:ui"
+  },
+  "heading": {
+    "lastPublished": "2025-11-25T20:16:33.000Z",
+    "type": "registry:ui"
+  },
+  "switch": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "choice-box": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "description-list": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "calendar": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "color-swatch-picker": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "tree": {
+    "lastPublished": "2025-11-19T05:54:45.000Z",
+    "type": "registry:ui"
+  },
+  "toggle-group": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "grid-list": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "multiple-select": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "dropdown": {
+    "lastPublished": "2025-11-08T08:37:09.000Z",
+    "type": "registry:ui"
+  },
+  "line-chart": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:ui"
+  },
+  "avatar": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "color-swatch": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "range-calendar": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "search-field": {
+    "lastPublished": "2025-11-08T08:37:09.000Z",
+    "type": "registry:ui"
+  },
+  "combo-box": {
+    "lastPublished": "2025-11-04T12:20:30.000Z",
+    "type": "registry:ui"
+  },
+  "dialog": {
+    "lastPublished": "2025-11-13T02:09:58.000Z",
+    "type": "registry:ui"
+  },
+  "menu": {
+    "lastPublished": "2025-11-08T08:37:09.000Z",
+    "type": "registry:ui"
+  },
+  "badge": {
+    "lastPublished": "2025-09-12T09:32:48.000Z",
+    "type": "registry:ui"
+  },
+  "progress-bar": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "number-field": {
+    "lastPublished": "2025-11-08T08:37:09.000Z",
+    "type": "registry:ui"
+  },
+  "sidebar": {
+    "lastPublished": "2025-11-28T05:56:36.000Z",
+    "type": "registry:ui"
+  },
+  "color-picker": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "table": {
+    "lastPublished": "2025-11-29T07:29:25.000Z",
+    "type": "registry:ui"
+  },
+  "separator": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "color-wheel": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "progress-circle": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:ui"
+  },
+  "button": {
+    "lastPublished": "2025-10-25T00:09:48.000Z",
+    "type": "registry:ui"
+  },
+  "toggle": {
+    "lastPublished": "2025-10-25T10:51:18.000Z",
+    "type": "registry:ui"
+  },
+  "modal": {
+    "lastPublished": "2025-11-17T12:03:06.000Z",
+    "type": "registry:ui"
+  },
+  "command-menu": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "text": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "toast": {
+    "lastPublished": "2025-10-24T22:30:25.000Z",
+    "type": "registry:ui"
+  },
+  "checkbox": {
+    "lastPublished": "2025-11-19T05:58:29.000Z",
+    "type": "registry:ui"
+  },
+  "tracker": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "textarea": {
+    "lastPublished": "2025-11-08T08:41:14.000Z",
+    "type": "registry:ui"
+  },
+  "select": {
+    "lastPublished": "2025-11-08T08:39:51.000Z",
+    "type": "registry:ui"
+  },
+  "input": {
+    "lastPublished": "2025-11-07T16:38:04.000Z",
+    "type": "registry:ui"
+  },
+  "color-area": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "skeleton": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "color-field": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "context-menu": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "avatar-size-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "carousel": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:ui"
+  },
+  "avatar-initials-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "avatar-shape-demo": {
+    "lastPublished": "2025-06-22T20:14:37.000Z",
+    "type": "registry:page"
+  },
+  "avatar-group-demo": {
+    "lastPublished": "2025-08-26T18:37:16.000Z",
+    "type": "registry:page"
+  },
+  "avatar-basic-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "carousel-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "carousel-options-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "carousel-api-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "carousel-autoplay-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tag-group-disabled-demo": {
+    "lastPublished": "2025-10-12T06:53:08.000Z",
+    "type": "registry:page"
+  },
+  "carousel-orientation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tag-group-with-remove-demo": {
+    "lastPublished": "2025-10-12T06:53:08.000Z",
+    "type": "registry:page"
+  },
+  "tag-group-controlled-demo": {
+    "lastPublished": "2025-10-12T06:53:08.000Z",
+    "type": "registry:page"
+  },
+  "tag-group-demo": {
+    "lastPublished": "2025-10-12T06:53:08.000Z",
+    "type": "registry:page"
+  },
+  "tag-group-href-demo": {
+    "lastPublished": "2025-10-12T06:53:08.000Z",
+    "type": "registry:page"
+  },
+  "list-box-infinite-scroll-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "list-box-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "list-box-multiple-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "list-box-section-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "list-box-rearrange-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "list-box-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "list-box-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "grid-list-drag-between-item-demo": {
+    "lastPublished": "2025-09-26T10:42:06.000Z",
+    "type": "registry:page"
+  },
+  "list-box-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "grid-list-section-demo": {
+    "lastPublished": "2025-09-26T10:42:06.000Z",
+    "type": "registry:page"
+  },
+  "grid-list-multiple-demo": {
+    "lastPublished": "2025-09-26T10:42:06.000Z",
+    "type": "registry:page"
+  },
+  "grid-list-disabled-demo": {
+    "lastPublished": "2025-09-26T10:42:06.000Z",
+    "type": "registry:page"
+  },
+  "grid-list-infinite-scroll-demo": {
+    "lastPublished": "2025-09-26T10:42:06.000Z",
+    "type": "registry:page"
+  },
+  "grid-list-render-empty-state-demo": {
+    "lastPublished": "2025-09-26T10:42:06.000Z",
+    "type": "registry:page"
+  },
+  "grid-list-controlled-demo": {
+    "lastPublished": "2025-09-26T10:42:06.000Z",
+    "type": "registry:page"
+  },
+  "grid-list-drag-demo": {
+    "lastPublished": "2025-09-26T10:42:06.000Z",
+    "type": "registry:page"
+  },
+  "grid-list-demo": {
+    "lastPublished": "2025-09-26T10:42:06.000Z",
+    "type": "registry:page"
+  },
+  "single-menu-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "menu-section-level-selection": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "menu-item-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "multiple-menu-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "menu-dynamic-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "menu-danger-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "menu-section-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "menu-with-arrow-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "menu-with-icon-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "menu-sub-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "menu-disabled-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "table-infinite-scroll-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "menu-basic-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "table-resize-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "table-sorting-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "table-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "table-bulk-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "table-drag-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "table-with-autocomplete-demo": {
+    "lastPublished": "2025-10-31T19:14:20.000Z",
+    "type": "registry:page"
+  },
+  "choicebox-controlled-demo": {
+    "lastPublished": "2025-09-20T07:05:23.000Z",
+    "type": "registry:page"
+  },
+  "choicebox-icon-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "choicebox-columns-demo": {
+    "lastPublished": "2025-09-20T07:05:23.000Z",
+    "type": "registry:page"
+  },
+  "choicebox-disabled-demo": {
+    "lastPublished": "2025-09-20T07:05:23.000Z",
+    "type": "registry:page"
+  },
+  "choicebox-demo": {
+    "lastPublished": "2025-09-20T07:05:23.000Z",
+    "type": "registry:page"
+  },
+  "choicebox-multiple-selection-demo": {
+    "lastPublished": "2025-09-20T07:05:23.000Z",
+    "type": "registry:page"
+  },
+  "tree-folder-demo": {
+    "lastPublished": "2025-11-19T05:58:29.000Z",
+    "type": "registry:page"
+  },
+  "tree-drag-demo": {
+    "lastPublished": "2025-11-19T05:58:29.000Z",
+    "type": "registry:page"
+  },
+  "tree-infinite-scroll-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "tree-multiple-demo": {
+    "lastPublished": "2025-07-23T23:13:22.000Z",
+    "type": "registry:page"
+  },
+  "badge-intent-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "badge-shape-demo": {
+    "lastPublished": "2025-06-09T18:19:08.000Z",
+    "type": "registry:page"
+  },
+  "badge-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "meter-decimal-format-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tree-demo": {
+    "lastPublished": "2025-07-23T23:13:22.000Z",
+    "type": "registry:page"
+  },
+  "meter-currency-format-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "loader-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "meter-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "loader-size-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "toast-description-demo": {
+    "lastPublished": "2025-06-28T11:11:50.000Z",
+    "type": "registry:page"
+  },
+  "toast-action-demo": {
+    "lastPublished": "2025-06-28T11:11:50.000Z",
+    "type": "registry:page"
+  },
+  "toast-status-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "loader-variant-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "toast-positions-demo": {
+    "lastPublished": "2025-06-28T11:11:50.000Z",
+    "type": "registry:page"
+  },
+  "toast-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "progress-bar-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "skeleton-shape-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "indeterminate-progress-bar-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "skeleton-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "note-intent-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "skeleton-soft-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "progress-circle-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "progress-circle-indeterminate-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "note-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "progress-circle-color-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "progress-circle-custom-size-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "progress-circle-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "text-basic-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "description-list-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "description-list-heading-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "description-list-card-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "heading-level-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "separator-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "separator-orientation-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "card-action-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "card-login-form-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "card-table-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "heading-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "card-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "show-more-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "show-more-as-text-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "show-more-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "show-more-orientation-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "select-demo": {
+    "lastPublished": "2025-10-04T14:49:33.000Z",
+    "type": "registry:page"
+  },
+  "select-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "select-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "select-with-icon-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "select-multiple-demo": {
+    "lastPublished": "2025-10-06T12:13:21.000Z",
+    "type": "registry:page"
+  },
+  "select-with-avatar-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "select-details-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "select-searchable-demo": {
+    "lastPublished": "2025-10-31T19:14:20.000Z",
+    "type": "registry:page"
+  },
+  "select-uncontrolled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "select-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "select-section-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-readonly-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-detail-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-controlled-selection-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-avatar-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-invalid-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-section-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "combo-box-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "multiple-select-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "multiple-select-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "multiple-select-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "multiple-select-invalid-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "controlled-values": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-wheel-disabled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "color-wheel-controlled-demo": {
+    "lastPublished": "2025-06-28T11:11:50.000Z",
+    "type": "registry:page"
+  },
+  "color-wheel-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "color-picker-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-swatch-picker-item-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-swatch-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "color-picker-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-picker-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-swatch-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-swatch-size-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-swatch-picker-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-field-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-field-with-prefix-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-field-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-field-with-suffix-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-area-channel-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "color-area-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "color-area-space-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "color-field-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-area-controlled-demo": {
+    "lastPublished": "2025-06-28T11:11:50.000Z",
+    "type": "registry:page"
+  },
+  "color-area-with-slider-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-area-disabled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "color-slider-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-slider-vertical-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-slider-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-slider-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "color-slider-with-label-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "drop-zone-and-file-trigger-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "line-chart-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "drop-zone-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "line-chart-monotone-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "line-chart-controlled-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "line-chart-custom-tooltip-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "line-chart-stacked-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "line-chart-custom-format-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "line-chart-custom-legend-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "line-chart-custom-colors-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "area-chart-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "area-chart-custom-tooltip-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "area-chart-controlled-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "area-chart-custom-format-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "area-chart-stacked-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "area-chart-custom-colors-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "area-chart-monotone-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "bar-list-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "area-chart-custom-legend-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "bar-list-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tracker-without-tooltip-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "tracker-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "bar-chart-monotone-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "bar-chart-custom-colors-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "bar-chart-custom-format-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "bar-chart-custom-legend-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "bar-chart-controlled-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "bar-chart-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "bar-chart-custom-tooltip-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "pie-chart-interactive-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "pie-chart-gap-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "pie-chart-donut-custom-label-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "bar-chart-stacked-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "pie-chart-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "pie-chart-donut-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "pie-chart-custom-colors-demo": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:page"
+  },
+  "switch-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "switch-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "switch-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-trigger-by-keyboard-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-dynamic-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "switch-disabled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "switch-uncontrolled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-blur-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-pending-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-separator-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-keyboard-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-controlled-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "context-menu-separator-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "context-menu-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "command-menu-danger-item-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "context-menu-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "context-menu-detail-description-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "context-menu-danger-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "slider-range-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "context-menu-with-icon-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "slider-orientation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "slider-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "slider-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "slider-prefix-suffix-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "slider-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "slider-step-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "toolbar-disabled-demo": {
+    "lastPublished": "2025-11-07T16:56:55.000Z",
+    "type": "registry:page"
+  },
+  "toolbar-demo": {
+    "lastPublished": "2025-11-07T16:56:55.000Z",
+    "type": "registry:page"
+  },
+  "option-preview": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "slider-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "toolbar-orientation-demo": {
+    "lastPublished": "2025-11-07T16:56:55.000Z",
+    "type": "registry:page"
+  },
+  "breadcrumbs-collections-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "breadcrumbs-menu-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "breadcrumbs-current-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "breadcrumbs-separator-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "link-button-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "link-unstyled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "link-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "breadcrumbs-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "disclosure-demo": {
+    "lastPublished": "2025-10-24T13:11:57.000Z",
+    "type": "registry:page"
+  },
+  "disclosure-group-disabled-demo": {
+    "lastPublished": "2025-10-24T13:09:06.000Z",
+    "type": "registry:page"
+  },
+  "link-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "disclosure-group-nested-demo": {
+    "lastPublished": "2025-10-24T13:09:06.000Z",
+    "type": "registry:page"
+  },
+  "disclosure-group-with-icon-demo": {
+    "lastPublished": "2025-10-24T13:09:06.000Z",
+    "type": "registry:page"
+  },
+  "disclosure-group-default-expand-demo": {
+    "lastPublished": "2025-10-24T13:09:06.000Z",
+    "type": "registry:page"
+  },
+  "disclosure-group-demo": {
+    "lastPublished": "2025-10-24T13:09:06.000Z",
+    "type": "registry:page"
+  },
+  "disclosure-controlled-demo": {
+    "lastPublished": "2025-10-24T13:11:57.000Z",
+    "type": "registry:page"
+  },
+  "disclosure-disabled-demo": {
+    "lastPublished": "2025-10-24T13:09:06.000Z",
+    "type": "registry:page"
+  },
+  "disclosure-group-allow-multiple-expand-demo": {
+    "lastPublished": "2025-10-24T13:09:06.000Z",
+    "type": "registry:page"
+  },
+  "pagination-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tabs-demo": {
+    "lastPublished": "2025-09-10T18:07:38.000Z",
+    "type": "registry:page"
+  },
+  "simple-pagination-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tabs-icons-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tabs-link-demo": {
+    "lastPublished": "2025-09-10T18:07:38.000Z",
+    "type": "registry:page"
+  },
+  "tabs-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tabs-orientation-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "sheet-float-demo": {
+    "lastPublished": "2025-10-24T13:15:33.000Z",
+    "type": "registry:page"
+  },
+  "sheet-custom-close-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "sheet-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "sheet-menu-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "sheet-position-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "sheet-demo": {
+    "lastPublished": "2025-10-24T13:15:33.000Z",
+    "type": "registry:page"
+  },
+  "sheet-sticky-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "modal-triggered-by-menu-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "modal-sticky-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "modal-nested-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "modal-size-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "modal-controlled-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "popover-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "modal-blur-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "alert-dialog-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "modal-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "popover-placement-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "popover-trigger-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "popover-custom-close": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "popover-arrow-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tooltip-delay-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tooltip-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tooltip-placement-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tooltip-without-arrow-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "drawer-nested-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "drawer-float-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "popover-demo": {
+    "lastPublished": "2025-09-12T10:00:18.000Z",
+    "type": "registry:page"
+  },
+  "tooltip-intent-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "drawer-basic-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "drawer-sticky-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "drawer-side-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "drawer-without-notch-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "drawer-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-group-with-text-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-group-orientation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-group-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-group-with-menu-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-icon-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-disabled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "button-loader-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-shape-demo": {
+    "lastPublished": "2025-06-09T18:19:08.000Z",
+    "type": "registry:page"
+  },
+  "button-size-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-intent-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-basic-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "button-pending-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "button-link-demo": {
+    "lastPublished": "2025-07-05T05:09:13.000Z",
+    "type": "registry:page"
+  },
+  "toggle-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "toggle-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "toggle-shape-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "toggle-size-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "toggle-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "toggle-intent-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "toggle-group-controlled-demo": {
+    "lastPublished": "2025-09-05T19:56:18.000Z",
+    "type": "registry:page"
+  },
+  "toggle-group-disabled-demo": {
+    "lastPublished": "2025-06-25T20:22:13.000Z",
+    "type": "registry:page"
+  },
+  "toggle-group-demo": {
+    "lastPublished": "2025-10-04T11:29:05.000Z",
+    "type": "registry:page"
+  },
+  "toggle-group-square-size-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "toggle-group-orientation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "toggle-group-selection-demo": {
+    "lastPublished": "2025-10-25T10:45:04.000Z",
+    "type": "registry:page"
+  },
+  "toggle-group-size-demo": {
+    "lastPublished": "2025-06-25T20:22:13.000Z",
+    "type": "registry:page"
+  },
+  "file-trigger-disabled-demo": {
+    "lastPublished": "2025-06-15T18:39:05.000Z",
+    "type": "registry:page"
+  },
+  "file-trigger-circle-demo": {
+    "lastPublished": "2025-06-15T18:39:05.000Z",
+    "type": "registry:page"
+  },
+  "file-trigger-folder-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "file-trigger-pending-demo": {
+    "lastPublished": "2025-06-28T11:11:50.000Z",
+    "type": "registry:page"
+  },
+  "file-trigger-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "file-trigger-controlled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "file-trigger-multiple-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "file-trigger-camera-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "tag-field-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "file-trigger-avatar-demo": {
+    "lastPublished": "2025-09-20T06:22:37.000Z",
+    "type": "registry:page"
+  },
+  "tag-field-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "tag-field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "search-field-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "search-field-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "search-field-readonly-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "search-field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "search-field-uncontrolled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "search-field-with-label-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "search-field-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "search-field-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "radio-group-demo": {
+    "lastPublished": "2025-06-15T15:52:42.000Z",
+    "type": "registry:page"
+  },
+  "radio-group-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "radio-group-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "radio-group-uncontrolled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "radio-group-orientation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "radio-group-description-demo": {
+    "lastPublished": "2025-06-17T18:25:59.000Z",
+    "type": "registry:page"
+  },
+  "radio-group-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-readonly-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-prefix-suffix-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-uncontrolled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-revealable-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "textarea-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "text-field-suffix-button-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "textarea-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "textarea-uncontrolled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "textarea-readonly-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "textarea-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "textarea-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "textarea-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-group-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-group-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-uncontrolled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-indeterminate-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-invalid-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-controlled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-group-description-demo": {
+    "lastPublished": "2025-10-25T21:03:23.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-group-uncontrolled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-group-indeterminate-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-disabled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-group-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "number-field-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "number-field-invalid-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "checkbox-group-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "number-field-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "number-field-uncontrolled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "input-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "number-field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "input-group-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "input-text-field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "input-label-description-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "input-basic-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "input-otp-separator-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "input-otp-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "input-otp-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-picker-custom-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-picker-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-time-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-picker-required-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-picker-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-picker-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "time-field-hc-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "time-field-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "time-field-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "time-field-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "time-field-readonly-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "time-field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-range-picker-disabled-demo": {
+    "lastPublished": "2025-11-07T16:38:04.000Z",
+    "type": "registry:page"
+  },
+  "date-range-picker-controlled-demo": {
+    "lastPublished": "2025-11-07T16:38:04.000Z",
+    "type": "registry:page"
+  },
+  "date-range-picker-time-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-range-picker-visible-duration-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-range-picker-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-range-picker-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "range-calendar-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "range-calendar-uncontrolled-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "date-range-picker-custom-validation-demo": {
+    "lastPublished": "2025-11-07T16:38:04.000Z",
+    "type": "registry:page"
+  },
+  "date-field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "range-calendar-controlled-demo": {
+    "lastPublished": "2025-06-28T11:11:50.000Z",
+    "type": "registry:page"
+  },
+  "calendar-demo": {
+    "lastPublished": "2025-06-09T12:51:12.000Z",
+    "type": "registry:page"
+  },
+  "date-field-controlled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-field-uncontrolled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-field-disabled-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-field-readonly-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-time-field-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "date-field-validation-demo": {
+    "lastPublished": "2025-10-23T21:37:26.000Z",
+    "type": "registry:page"
+  },
+  "primitive": {
+    "lastPublished": "2025-09-10T18:07:38.000Z",
+    "type": "registry:lib"
+  },
+  "use-media-query": {
+    "lastPublished": "2025-08-27T15:06:43.000Z",
+    "type": "registry:hook"
+  },
+  "use-mobile": {
+    "lastPublished": "2025-11-28T05:51:05.000Z",
+    "type": "registry:hook"
+  }
+}

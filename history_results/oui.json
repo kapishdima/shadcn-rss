@@ -1,0 +1,550 @@
+{
+  "oui-alert-ex-form-demo": {
+    "lastPublished": "2025-11-25T05:52:08.000Z",
+    "type": "registry:component"
+  },
+  "oui-autocomplete-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-autocomplete-demo-searchable": {
+    "lastPublished": "2025-12-01T05:36:02.000Z",
+    "type": "registry:component"
+  },
+  "oui-autocomplete-demo-avatar": {
+    "lastPublished": "2025-12-01T05:36:02.000Z",
+    "type": "registry:component"
+  },
+  "oui-alert-ex-form": {
+    "lastPublished": "2025-11-04T16:48:56.000Z",
+    "type": "registry:component"
+  },
+  "oui-badge-ex": {
+    "lastPublished": "2025-12-02T04:22:26.000Z",
+    "type": "registry:component"
+  },
+  "oui-base": {
+    "lastPublished": "2025-11-22T05:26:30.000Z",
+    "type": "registry:ui"
+  },
+  "oui-button-demo-outline": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button": {
+    "lastPublished": "2025-12-04T11:23:16.000Z",
+    "type": "registry:ui"
+  },
+  "oui-button-demo-destructive": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-badge-ex-demo": {
+    "lastPublished": "2025-12-02T04:11:49.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-demo-disabled": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-demo-disabled-animation": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-demo-lg": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-demo-icon-right": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-demo-icon-left": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-demo-ghost": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-demo-link": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-demo-secondary": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-group-demo": {
+    "lastPublished": "2025-12-04T21:53:59.000Z",
+    "type": "registry:component"
+  },
+  "oui-button-group": {
+    "lastPublished": "2025-12-05T04:53:13.000Z",
+    "type": "registry:ui"
+  },
+  "oui-button-demo-sm": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-checkbox": {
+    "lastPublished": "2025-11-30T18:21:14.000Z",
+    "type": "registry:ui"
+  },
+  "oui-checkbox-group": {
+    "lastPublished": "2025-11-29T03:12:24.000Z",
+    "type": "registry:ui"
+  },
+  "oui-checkbox-demo": {
+    "lastPublished": "2025-11-30T18:21:14.000Z",
+    "type": "registry:component"
+  },
+  "oui-card-ex": {
+    "lastPublished": "2025-11-12T01:01:51.000Z",
+    "type": "registry:component"
+  },
+  "oui-checkbox-demo-blue": {
+    "lastPublished": "2025-11-30T18:21:14.000Z",
+    "type": "registry:component"
+  },
+  "oui-checkbox-group-demo": {
+    "lastPublished": "2025-11-28T21:47:53.000Z",
+    "type": "registry:component"
+  },
+  "oui-checkbox-group-demo-invalid": {
+    "lastPublished": "2025-11-28T21:59:30.000Z",
+    "type": "registry:component"
+  },
+  "oui-combo-box": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-combo-box-demo": {
+    "lastPublished": "2025-10-25T22:20:16.000Z",
+    "type": "registry:component"
+  },
+  "oui-combo-box-demo-header": {
+    "lastPublished": "2025-12-01T06:02:40.000Z",
+    "type": "registry:component"
+  },
+  "oui-combo-box-demo-avatar": {
+    "lastPublished": "2025-12-01T06:02:40.000Z",
+    "type": "registry:component"
+  },
+  "oui-dialog": {
+    "lastPublished": "2025-11-25T17:49:54.000Z",
+    "type": "registry:ui"
+  },
+  "oui-dialog-demo": {
+    "lastPublished": "2025-12-01T16:45:40.000Z",
+    "type": "registry:component"
+  },
+  "oui-dialog-demo-scrollable-content": {
+    "lastPublished": "2025-12-01T16:45:40.000Z",
+    "type": "registry:component"
+  },
+  "oui-dialog-demo-sticky-footer": {
+    "lastPublished": "2025-12-01T16:45:40.000Z",
+    "type": "registry:component"
+  },
+  "oui-dialog-demo-alert": {
+    "lastPublished": "2025-12-01T21:44:11.000Z",
+    "type": "registry:component"
+  },
+  "oui-disclosure": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-dialog-demo-alert-confirm": {
+    "lastPublished": "2025-12-01T21:44:11.000Z",
+    "type": "registry:component"
+  },
+  "oui-disclosure-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-disclosure-demo-group": {
+    "lastPublished": "2025-12-01T05:45:28.000Z",
+    "type": "registry:component"
+  },
+  "oui-field": {
+    "lastPublished": "2025-11-30T06:58:31.000Z",
+    "type": "registry:ui"
+  },
+  "oui-disclosure-demo-text": {
+    "lastPublished": "2025-12-01T05:45:28.000Z",
+    "type": "registry:component"
+  },
+  "oui-field-demo": {
+    "lastPublished": "2025-12-03T17:18:08.000Z",
+    "type": "registry:component"
+  },
+  "oui-field-demo-fieldset": {
+    "lastPublished": "2025-11-26T04:54:01.000Z",
+    "type": "registry:component"
+  },
+  "oui-form-demo": {
+    "lastPublished": "2025-11-30T18:27:34.000Z",
+    "type": "registry:component"
+  },
+  "oui-group": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-header": {
+    "lastPublished": "2025-11-11T02:31:14.000Z",
+    "type": "registry:ui"
+  },
+  "oui-group-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-header-demo": {
+    "lastPublished": "2025-12-01T06:30:04.000Z",
+    "type": "registry:component"
+  },
+  "oui-heading": {
+    "lastPublished": "2025-11-11T02:31:14.000Z",
+    "type": "registry:ui"
+  },
+  "oui-heading-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-index": {
+    "lastPublished": "2025-12-04T20:35:15.000Z",
+    "type": "registry:ui"
+  },
+  "oui-react-router-index": {
+    "lastPublished": "2025-11-12T23:55:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-input-demo-password": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-input-demo-disabled": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-input-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-input": {
+    "lastPublished": "2025-12-04T11:57:25.000Z",
+    "type": "registry:ui"
+  },
+  "oui-input-group": {
+    "lastPublished": "2025-12-04T11:57:25.000Z",
+    "type": "registry:ui"
+  },
+  "oui-input-group-demo": {
+    "lastPublished": "2025-12-03T16:58:40.000Z",
+    "type": "registry:component"
+  },
+  "oui-keyboard": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-keyboard-demo": {
+    "lastPublished": "2025-12-01T06:30:04.000Z",
+    "type": "registry:component"
+  },
+  "oui-label-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-label": {
+    "lastPublished": "2025-11-22T04:51:03.000Z",
+    "type": "registry:ui"
+  },
+  "oui-label-demo-disabled": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-link": {
+    "lastPublished": "2025-11-15T01:41:33.000Z",
+    "type": "registry:ui"
+  },
+  "oui-link-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-hover": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-always": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-focus": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-current": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-disabled": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-button": {
+    "lastPublished": "2025-12-02T04:22:26.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-button-outline": {
+    "lastPublished": "2025-11-14T21:17:39.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-button-destructive": {
+    "lastPublished": "2025-11-14T21:17:39.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-button-disabled": {
+    "lastPublished": "2025-12-02T04:22:26.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-icon": {
+    "lastPublished": "2025-11-14T21:17:39.000Z",
+    "type": "registry:component"
+  },
+  "oui-link-demo-login": {
+    "lastPublished": "2025-11-26T03:42:59.000Z",
+    "type": "registry:component"
+  },
+  "oui-list-box": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-list-box-demo": {
+    "lastPublished": "2025-10-26T03:46:24.000Z",
+    "type": "registry:component"
+  },
+  "oui-list-box-demo-multiple": {
+    "lastPublished": "2025-10-26T03:46:24.000Z",
+    "type": "registry:component"
+  },
+  "oui-list-box-ex-pagination": {
+    "lastPublished": "2025-11-04T16:48:56.000Z",
+    "type": "registry:component"
+  },
+  "oui-list-box-ex-pagination-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-menu": {
+    "lastPublished": "2025-12-04T21:49:33.000Z",
+    "type": "registry:ui"
+  },
+  "oui-menu-demo-checkboxes": {
+    "lastPublished": "2025-12-04T21:49:33.000Z",
+    "type": "registry:component"
+  },
+  "oui-menu-demo": {
+    "lastPublished": "2025-12-04T21:49:33.000Z",
+    "type": "registry:component"
+  },
+  "oui-menu-demo-avatar": {
+    "lastPublished": "2025-12-04T21:49:33.000Z",
+    "type": "registry:component"
+  },
+  "oui-menu-demo-radio-group": {
+    "lastPublished": "2025-12-01T06:30:04.000Z",
+    "type": "registry:component"
+  },
+  "oui-menu-demo-avatar-only": {
+    "lastPublished": "2025-12-04T21:49:33.000Z",
+    "type": "registry:component"
+  },
+  "oui-menu-demo-icon": {
+    "lastPublished": "2025-12-04T21:49:33.000Z",
+    "type": "registry:component"
+  },
+  "oui-modal": {
+    "lastPublished": "2025-12-01T03:43:18.000Z",
+    "type": "registry:ui"
+  },
+  "oui-modal-ex-sheet": {
+    "lastPublished": "2025-12-02T04:54:17.000Z",
+    "type": "registry:component"
+  },
+  "oui-modal-ex-sheet-demo": {
+    "lastPublished": "2025-12-02T04:54:17.000Z",
+    "type": "registry:component"
+  },
+  "oui-modal-ex-sheet-demo-sides": {
+    "lastPublished": "2025-12-02T04:54:17.000Z",
+    "type": "registry:component"
+  },
+  "oui-number-field-demo": {
+    "lastPublished": "2025-12-03T04:53:16.000Z",
+    "type": "registry:component"
+  },
+  "oui-number-field": {
+    "lastPublished": "2025-12-03T04:53:16.000Z",
+    "type": "registry:ui"
+  },
+  "oui-popover": {
+    "lastPublished": "2025-12-04T15:44:43.000Z",
+    "type": "registry:ui"
+  },
+  "oui-radio-group": {
+    "lastPublished": "2025-11-30T17:03:45.000Z",
+    "type": "registry:ui"
+  },
+  "oui-popover-demo": {
+    "lastPublished": "2025-11-25T04:47:24.000Z",
+    "type": "registry:component"
+  },
+  "oui-radio-group-demo": {
+    "lastPublished": "2025-11-30T08:03:23.000Z",
+    "type": "registry:component"
+  },
+  "oui-radio-group-demo-green": {
+    "lastPublished": "2025-11-30T08:03:23.000Z",
+    "type": "registry:component"
+  },
+  "oui-react-router-error-boundary": {
+    "lastPublished": "2025-11-15T01:26:27.000Z",
+    "type": "registry:component"
+  },
+  "oui-search-field-demo": {
+    "lastPublished": "2025-12-01T01:43:27.000Z",
+    "type": "registry:component"
+  },
+  "oui-select": {
+    "lastPublished": "2025-11-25T19:59:35.000Z",
+    "type": "registry:ui"
+  },
+  "oui-react-router-provider": {
+    "lastPublished": "2025-10-26T22:39:34.000Z",
+    "type": "registry:component"
+  },
+  "oui-search-field": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-select-demo": {
+    "lastPublished": "2025-11-26T04:01:13.000Z",
+    "type": "registry:component"
+  },
+  "oui-select-demo-large-list": {
+    "lastPublished": "2025-11-25T19:43:29.000Z",
+    "type": "registry:component"
+  },
+  "oui-select-demo-icon": {
+    "lastPublished": "2025-11-25T19:56:03.000Z",
+    "type": "registry:component"
+  },
+  "oui-separator-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-select-demo-multiple": {
+    "lastPublished": "2025-11-25T19:33:16.000Z",
+    "type": "registry:component"
+  },
+  "oui-separator": {
+    "lastPublished": "2025-12-05T01:18:59.000Z",
+    "type": "registry:ui"
+  },
+  "oui-sidebar-ex": {
+    "lastPublished": "2025-11-05T06:25:52.000Z",
+    "type": "registry:component"
+  },
+  "oui-slider": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-switch": {
+    "lastPublished": "2025-11-30T18:21:14.000Z",
+    "type": "registry:ui"
+  },
+  "oui-slider-demo": {
+    "lastPublished": "2025-12-01T03:02:58.000Z",
+    "type": "registry:component"
+  },
+  "oui-switch-demo": {
+    "lastPublished": "2025-11-30T18:21:14.000Z",
+    "type": "registry:component"
+  },
+  "oui-table": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-table-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-tabs": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-tabs-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-table-demo-action-menu": {
+    "lastPublished": "2025-12-04T21:49:33.000Z",
+    "type": "registry:component"
+  },
+  "oui-text-demo": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-text": {
+    "lastPublished": "2025-10-22T12:18:05.000Z",
+    "type": "registry:ui"
+  },
+  "oui-text-area": {
+    "lastPublished": "2025-12-04T15:36:08.000Z",
+    "type": "registry:ui"
+  },
+  "oui-text-area-demo": {
+    "lastPublished": "2025-11-25T18:13:01.000Z",
+    "type": "registry:component"
+  },
+  "oui-text-field": {
+    "lastPublished": "2025-12-03T04:53:16.000Z",
+    "type": "registry:ui"
+  },
+  "oui-text-field-demo": {
+    "lastPublished": "2025-11-24T21:44:05.000Z",
+    "type": "registry:component"
+  },
+  "oui-text-field-demo-invalid": {
+    "lastPublished": "2025-11-26T04:32:03.000Z",
+    "type": "registry:component"
+  },
+  "oui-toggle-button": {
+    "lastPublished": "2025-11-10T21:53:16.000Z",
+    "type": "registry:ui"
+  },
+  "oui-toggle-button-demo": {
+    "lastPublished": "2025-10-28T00:57:49.000Z",
+    "type": "registry:component"
+  },
+  "oui-react-router-theme-toggle-button": {
+    "lastPublished": "2025-11-12T23:33:31.000Z",
+    "type": "registry:component"
+  },
+  "oui-tooltip-demo": {
+    "lastPublished": "2025-12-01T02:42:53.000Z",
+    "type": "registry:component"
+  },
+  "oui-on-submit-react-router": {
+    "lastPublished": "2025-10-27T01:55:58.000Z",
+    "type": "registry:lib"
+  },
+  "oui-tooltip": {
+    "lastPublished": "2025-12-01T02:42:53.000Z",
+    "type": "registry:ui"
+  }
+}

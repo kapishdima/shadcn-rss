@@ -1,0 +1,350 @@
+{
+  "rich-text-editor-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "history-toolbar-plugin": {
+    "lastPublished": "2025-10-08T01:50:00.000Z",
+    "type": "registry:ui"
+  },
+  "font-size-toolbar-plugin": {
+    "lastPublished": "2025-11-26T21:38:18.000Z",
+    "type": "registry:ui"
+  },
+  "subsuper-toolbar-plugin": {
+    "lastPublished": "2025-11-26T21:38:18.000Z",
+    "type": "registry:ui"
+  },
+  "font-family-toolbar-plugin": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:ui"
+  },
+  "font-format-toolbar-plugin": {
+    "lastPublished": "2025-11-26T21:38:18.000Z",
+    "type": "registry:ui"
+  },
+  "toolbar-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "clear-formatting-toolbar-plugin": {
+    "lastPublished": "2025-11-26T21:38:18.000Z",
+    "type": "registry:ui"
+  },
+  "actions-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "max-length-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "element-format-toolbar-plugin": {
+    "lastPublished": "2025-10-15T05:46:52.000Z",
+    "type": "registry:ui"
+  },
+  "font-color-toolbar-plugin": {
+    "lastPublished": "2025-11-26T21:38:18.000Z",
+    "type": "registry:ui"
+  },
+  "counter-character-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "link-toolbar-plugin": {
+    "lastPublished": "2025-11-26T21:38:18.000Z",
+    "type": "registry:ui"
+  },
+  "import-export-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "markdown-toggle-plugin": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:ui"
+  },
+  "clear-editor-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "share-content-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "edit-mode-toggle-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "tree-view-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "speech-to-text-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "context-menu-plugin": {
+    "lastPublished": "2025-08-19T12:01:18.000Z",
+    "type": "registry:ui"
+  },
+  "draggable-block-plugin": {
+    "lastPublished": "2025-08-16T02:23:34.000Z",
+    "type": "registry:ui"
+  },
+  "block-format-toolbar-plugin": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:ui"
+  },
+  "autocomplete-plugin": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:ui"
+  },
+  "drag-drop-paste-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "horizontal-rule-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "code-plugin": {
+    "lastPublished": "2025-10-15T05:46:52.000Z",
+    "type": "registry:ui"
+  },
+  "floating-text-format-plugin": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:ui"
+  },
+  "auto-embed-plugin": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:ui"
+  },
+  "keywords-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "markdown-plugin": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:ui"
+  },
+  "emoji-plugin": {
+    "lastPublished": "2025-10-08T01:50:00.000Z",
+    "type": "registry:ui"
+  },
+  "mention-plugin": {
+    "lastPublished": "2025-10-08T01:50:00.000Z",
+    "type": "registry:ui"
+  },
+  "layout-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "link-plugin": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:ui"
+  },
+  "tab-focus-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "image-plugin": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:ui"
+  },
+  "typing-pref-plugin": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:ui"
+  },
+  "rich-text-editor-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "table-plugin": {
+    "lastPublished": "2025-10-15T05:46:52.000Z",
+    "type": "registry:ui"
+  },
+  "actions-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "autocomplete-plugin-demo": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:example"
+  },
+  "auto-embed-plugin-demo": {
+    "lastPublished": "2025-09-08T00:42:51.000Z",
+    "type": "registry:example"
+  },
+  "auto-focus-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "block-format-toolbar-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "component-picker-menu-plugin": {
+    "lastPublished": "2025-12-01T09:42:10.000Z",
+    "type": "registry:ui"
+  },
+  "clear-editor-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "editor": {
+    "lastPublished": "2025-11-27T13:53:35.000Z",
+    "type": "registry:block"
+  },
+  "clear-formatting-toolbar-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "code-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "component-picker-menu-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "context-menu-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "counter-character-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "drag-drop-paste-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "draggable-block-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "edit-mode-toggle-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "element-format-toolbar-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "emoji-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "floating-text-format-plugin-demo": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:example"
+  },
+  "font-color-toolbar-plugin-demo": {
+    "lastPublished": "2025-10-31T03:00:51.000Z",
+    "type": "registry:example"
+  },
+  "font-family-toolbar-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "font-format-toolbar-plugin-demo": {
+    "lastPublished": "2025-10-08T01:50:00.000Z",
+    "type": "registry:example"
+  },
+  "editor-md": {
+    "lastPublished": "2025-10-15T06:08:07.000Z",
+    "type": "registry:block"
+  },
+  "font-size-toolbar-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "history-toolbar-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "hashtag-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "horizontal-rule-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "image-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "import-export-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "keywords-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "layout-plugin-demo": {
+    "lastPublished": "2025-08-19T12:01:18.000Z",
+    "type": "registry:example"
+  },
+  "link-plugin-demo": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:example"
+  },
+  "link-toolbar-plugin-demo": {
+    "lastPublished": "2025-09-08T04:31:24.000Z",
+    "type": "registry:example"
+  },
+  "markdown-toggle-plugin-demo": {
+    "lastPublished": "2025-09-08T00:42:51.000Z",
+    "type": "registry:example"
+  },
+  "markdown-plugin-demo": {
+    "lastPublished": "2025-09-08T00:42:51.000Z",
+    "type": "registry:example"
+  },
+  "max-length-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "mention-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "share-content-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "tab-focus-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "table-plugin-demo": {
+    "lastPublished": "2025-09-08T00:42:51.000Z",
+    "type": "registry:example"
+  },
+  "toolbar-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "subsuper-toolbar-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "speech-to-text-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "tree-view-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "typing-pref-plugin-demo": {
+    "lastPublished": "2025-05-31T06:33:36.000Z",
+    "type": "registry:example"
+  },
+  "editor-x": {
+    "lastPublished": "2025-12-01T09:42:10.000Z",
+    "type": "registry:block"
+  }
+}
