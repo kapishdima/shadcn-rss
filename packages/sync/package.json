@@ -4,6 +4,9 @@
   "private": true,
   "license": "MIT",
   "type": "module",
+  "scripts": {
+    "sync": "NODE_ENV=development bun ./src/cli.ts"
+  },
   "exports": {
     ".": "./src/index.ts"
   },
@@ -16,7 +19,9 @@
     "@shadcnrss/logger": "*",
     "@shadcnrss/tui": "*",
     "@shadcnrss/typescript-config": "*",
+    "@tanstack/pacer": "^0.17.1",
     "date-fns": "^4.1.0",
+    "tsup": "^8.5.1",
     "zod": "^4.2.1"
   }
 }

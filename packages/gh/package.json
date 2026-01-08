@@ -11,6 +11,7 @@
     "access": "public"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "octokit": "^5.0.5"
   }
 }

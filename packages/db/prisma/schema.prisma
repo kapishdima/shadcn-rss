@@ -15,51 +15,63 @@ datasource db {
 
 model Registry {
   id          Int     @id @default(autoincrement())
-  name        String @unique
+  name        String  @unique
   description String?
   homepage    String?
   url         String
   repo        String?
 
-  files    RegistryItemFile[]
-  items RegistryItem[]
-  repos RegistryRepo?
+  items    RegistryItem[]
+  files    RegistryFile[]
+  repoInfo RegistryRepo?
 
   @@map("registries")
 }
 
 model RegistryItem {
-  id           Int           @id @default(autoincrement())
-  registryId   Int?          @map("registry_id")
+  id           Int      @id @default(autoincrement())
+  registryId   Int      @map("registry_id")
   name         String
   title        String?
   description  String?
-  registryDeps String?       @map("registry_deps")
+  registryDeps String?  @map("registry_deps")
   deps         String?
-  type         String? 
-  
-  registry Registry? @relation(fields: [registryId], references: [id])
-  registryItemCommits RegistryItemCommits[]
+  type         String?
+
+  registry Registry              @relation(fields: [registryId], references: [id], onDelete: Cascade)
   files    RegistryItemFile[]
   states   RegistryItemState[]
-  diffs    RegistryItemDiff[]
 
   @@unique([registryId, name])
   @@map("registries_items")
+  @@index([name])
+}
+
+model RegistryFile {
+  id         Int    @id @default(autoincrement())
+  registryId Int    @map("registry_id")
+  path       String
+  type       String?
+
+  registry Registry             @relation(fields: [registryId], references: [id], onDelete: Cascade)
+  items    RegistryItemFile[]
+  commits  RegistryFileCommit[]
+
+  @@unique([registryId, path])
+  @@map("registry_files")
+  @@index([path])
 }
 
 model RegistryItemFile {
-  id      Int           @id @default(autoincrement())
-  registryId Int?       @map("registry_id")
-  itemId  Int?          @map("item_id")
-  path    String?
-  type    String? 
+  id     Int @id @default(autoincrement())
+  itemId Int @map("item_id")
+  fileId Int @map("file_id")
 
-  item RegistryItem? @relation(fields: [itemId], references: [id])
-  registry Registry? @relation(fields: [registryId], references: [id])
+  item RegistryItem @relation(fields: [itemId], references: [id], onDelete: Cascade)
+  file RegistryFile @relation(fields: [fileId], references: [id], onDelete: Cascade)
 
-  @@unique([registryId, path])
-  @@map("registries_items_files")
+  @@unique([itemId, fileId])
+  @@map("registry_item_files")
 }
 
 model RegistryRepo {
@@ -100,15 +112,6 @@ model RegistryItemState {
   @@map("registry_item_states")
 }
 
-model RegistryItemDiff {
-  id     Int     @id @default(autoincrement())
-  itemId Int?    @map("item_id")
-  content String?
-
-  item RegistryItem? @relation(fields: [itemId], references: [id])
-
-  @@map("registry_item_diffs")
-}
 
 model InvalidRegistry {
   id  Int    @id @default(autoincrement())
@@ -121,15 +124,27 @@ model InvalidRegistry {
   @@map("invalid_registries")
 }
 
-model RegistryItemCommits {
-  id        Int      @id @default(autoincrement())
-  itemId    Int?     @map("item_id")
-  commitSha String?  @map("commit_sha")
+model RegistryCommit {
+  id        Int       @id @default(autoincrement())
+  commitSha String    @map("commit_sha") @unique
   message   String?
   url       String?
-  date   DateTime?
+  date      DateTime?
 
-  items RegistryItem[]? @relation(fields: [itemId], references: [id])
+  files RegistryFileCommit[]
 
-  @@map("registry_item_commits")
+  @@map("registry_commits")
+}
+
+model RegistryFileCommit {
+  id       Int     @id @default(autoincrement())
+  fileId   Int     @map("file_id")
+  commitId Int     @map("commit_id")
+  diff     String?
+
+  file   RegistryFile   @relation(fields: [fileId], references: [id], onDelete: Cascade)
+  commit RegistryCommit @relation(fields: [commitId], references: [id], onDelete: Cascade)
+
+  @@unique([fileId, commitId])
+  @@map("registry_file_commits")
 }
