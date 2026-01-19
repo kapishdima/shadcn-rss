@@ -37,8 +37,10 @@ export const RegistryCard: React.FC<RegistryCardProps> = ({
 }) => {
   const { handleCopyRss, handleToggle } = useRegistryCardActions(
     registry,
-    onToggle
+    onToggle,
   );
+
+  console.log("Rendering RegistryCard for:", registry);
 
   const visitUrl = React.useMemo(() => {
     const baseUrl = registry.homepage ?? registry.url;
@@ -53,7 +55,7 @@ export const RegistryCard: React.FC<RegistryCardProps> = ({
     } catch {
       const separator = baseUrl.includes("?") ? "&" : "?";
       return `${baseUrl}${separator}utm_source=${encodeURIComponent(
-        registry.utmSource
+        registry.utmSource,
       )}`;
     }
   }, [registry.homepage, registry.url, registry.utmSource]);
@@ -62,7 +64,7 @@ export const RegistryCard: React.FC<RegistryCardProps> = ({
     <Card
       className={cn(
         "flex flex-col h-full overflow-hidden hover:shadow-md transition-all hover:-translate-y-0.5 border-muted-foreground/10 gap-0 py-4",
-        isSelected && "ring-1 ring-primary/50 border-primary/50"
+        isSelected && "ring-1 ring-primary/50 border-primary/50",
       )}
     >
       <CardHeader className="flex flex-row items-center gap-3 space-y-0 px-4">
@@ -84,7 +86,7 @@ export const RegistryCard: React.FC<RegistryCardProps> = ({
               size="icon-sm"
               className={cn(
                 "h-8 w-8 rounded-full text-muted-foreground hover:text-foreground",
-                isSelected && "text-primary hover:text-primary"
+                isSelected && "text-primary hover:text-primary",
               )}
               onClick={handleToggle}
               title={isSelected ? "Deselect for export" : "Select for export"}

@@ -1,48 +1,41 @@
 import {
-  sqliteTable,
+  pgTable,
   text,
   integer,
+  boolean,
+  timestamp,
+  serial,
   uniqueIndex,
-} from "drizzle-orm/sqlite-core";
+} from "drizzle-orm/pg-core";
 
 // ============================================
 // Better Auth Schema
 // ============================================
 
-export const user = sqliteTable("user", {
+export const user = pgTable("user", {
   id: text("id").primaryKey(),
   name: text("name").notNull(),
   email: text("email").notNull().unique(),
-  emailVerified: integer("email_verified", { mode: "boolean" })
-    .notNull()
-    .default(false),
+  emailVerified: boolean("email_verified").notNull().default(false),
   image: text("image"),
-  createdAt: integer("created_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
-  updatedAt: integer("updated_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
 });
 
-export const session = sqliteTable("session", {
+export const session = pgTable("session", {
   id: text("id").primaryKey(),
   userId: text("user_id")
     .notNull()
     .references(() => user.id, { onDelete: "cascade" }),
   token: text("token").notNull().unique(),
-  expiresAt: integer("expires_at", { mode: "timestamp" }).notNull(),
+  expiresAt: timestamp("expires_at").notNull(),
   ipAddress: text("ip_address"),
   userAgent: text("user_agent"),
-  createdAt: integer("created_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
-  updatedAt: integer("updated_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
 });
 
-export const account = sqliteTable("account", {
+export const account = pgTable("account", {
   id: text("id").primaryKey(),
   userId: text("user_id")
     .notNull()
@@ -52,44 +45,32 @@ export const account = sqliteTable("account", {
   providerId: text("provider_id").notNull(),
   accessToken: text("access_token"),
   refreshToken: text("refresh_token"),
-  accessTokenExpiresAt: integer("access_token_expires_at", {
-    mode: "timestamp",
-  }),
-  refreshTokenExpiresAt: integer("refresh_token_expires_at", {
-    mode: "timestamp",
-  }),
+  accessTokenExpiresAt: timestamp("access_token_expires_at"),
+  refreshTokenExpiresAt: timestamp("refresh_token_expires_at"),
   scope: text("scope"),
   idToken: text("id_token"),
   password: text("password"),
-  createdAt: integer("created_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
-  updatedAt: integer("updated_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
 });
 
-export const verification = sqliteTable("verification", {
+export const verification = pgTable("verification", {
   id: text("id").primaryKey(),
   identifier: text("identifier").notNull(),
   value: text("value").notNull(),
-  expiresAt: integer("expires_at", { mode: "timestamp" }).notNull(),
-  createdAt: integer("created_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
-  updatedAt: integer("updated_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
+  expiresAt: timestamp("expires_at").notNull(),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
 });
 
 // ============================================
 // Application Schema
 // ============================================
 
-export const registries = sqliteTable(
+export const registries = pgTable(
   "registries",
   {
-    id: integer("id").primaryKey({ autoIncrement: true }),
+    id: serial("id").primaryKey(),
     name: text("name").notNull(),
     homepage: text("homepage").notNull(),
     url: text("url").notNull().unique(),
@@ -97,26 +78,24 @@ export const registries = sqliteTable(
     description: text("description").notNull(),
     logo: text("logo").default(""),
     // Status
-    isActive: integer("is_active", { mode: "boolean" }).notNull().default(true),
+    isActive: boolean("is_active").notNull().default(true),
     // RSS feed information
-    hasFeed: integer("has_feed", { mode: "boolean" }).default(false),
+    hasFeed: boolean("has_feed").default(false),
     rssUrl: text("rss_url"),
     // Feed channel information (stored as JSON)
     feedTitle: text("feed_title"),
     feedLink: text("feed_link"),
     feedDescription: text("feed_description"),
     // Timestamps
-    updatedAt: integer("updated_at", { mode: "timestamp" }),
-    fetchedAt: integer("fetched_at", { mode: "timestamp" }),
-    createdAt: integer("created_at", { mode: "timestamp" })
-      .notNull()
-      .$defaultFn(() => new Date()),
+    updatedAt: timestamp("updated_at"),
+    fetchedAt: timestamp("fetched_at"),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
   },
   (table) => [uniqueIndex("registries_url_idx").on(table.url)]
 );
 
-export const rssItems = sqliteTable("rss_items", {
-  id: integer("id").primaryKey({ autoIncrement: true }),
+export const rssItems = pgTable("rss_items", {
+  id: serial("id").primaryKey(),
   registryId: integer("registry_id")
     .notNull()
     .references(() => registries.id, { onDelete: "cascade" }),
@@ -124,33 +103,27 @@ export const rssItems = sqliteTable("rss_items", {
   link: text("link").notNull(),
   guid: text("guid").notNull(),
   description: text("description"),
-  pubDate: integer("pub_date", { mode: "timestamp" }).notNull(),
-  createdAt: integer("created_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
+  pubDate: timestamp("pub_date").notNull(),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
-export const registryStories = sqliteTable(
+export const registryStories = pgTable(
   "registry_stories",
   {
-    id: integer("id").primaryKey({ autoIncrement: true }),
+    id: serial("id").primaryKey(),
     registryId: integer("registry_id")
       .notNull()
       .references(() => registries.id, { onDelete: "cascade" }),
     year: integer("year").notNull(),
     firstItemTitle: text("first_item_title"),
-    firstItemDate: integer("first_item_date", { mode: "timestamp" }),
+    firstItemDate: timestamp("first_item_date"),
     componentCount: integer("component_count").notNull().default(0),
     blockCount: integer("block_count").notNull().default(0),
     peakMonth: text("peak_month").notNull(),
     avgMonthlyPubs: integer("avg_monthly_pubs").notNull().default(0),
     totalItems: integer("total_items").notNull().default(0),
-    createdAt: integer("created_at", { mode: "timestamp" })
-      .notNull()
-      .$defaultFn(() => new Date()),
-    updatedAt: integer("updated_at", { mode: "timestamp" })
-      .notNull()
-      .$defaultFn(() => new Date()),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at").notNull().defaultNow(),
   },
   (table) => [
     uniqueIndex("registry_stories_registry_year_idx").on(
@@ -164,47 +137,41 @@ export const registryStories = sqliteTable(
 // Webhook Schema
 // ============================================
 
-export const webhooks = sqliteTable("webhooks", {
+export const webhooks = pgTable("webhooks", {
   id: text("id").primaryKey(),
   userId: text("user_id")
     .notNull()
     .references(() => user.id, { onDelete: "cascade" }),
   url: text("url").notNull(),
   secret: text("secret"), // Optional secret for HMAC signature
-  isActive: integer("is_active", { mode: "boolean" }).notNull().default(true),
+  isActive: boolean("is_active").notNull().default(true),
   // Status tracking
   status: text("status", { enum: ["pending", "healthy", "failed"] })
     .notNull()
     .default("pending"),
-  lastTriggeredAt: integer("last_triggered_at", { mode: "timestamp" }),
-  lastSuccessAt: integer("last_success_at", { mode: "timestamp" }),
-  lastFailureAt: integer("last_failure_at", { mode: "timestamp" }),
+  lastTriggeredAt: timestamp("last_triggered_at"),
+  lastSuccessAt: timestamp("last_success_at"),
+  lastFailureAt: timestamp("last_failure_at"),
   lastErrorMessage: text("last_error_message"),
   consecutiveFailures: integer("consecutive_failures").notNull().default(0),
   // Timestamps
-  createdAt: integer("created_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
-  updatedAt: integer("updated_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
 });
 
-export const webhookRegistries = sqliteTable("webhook_registries", {
-  id: integer("id").primaryKey({ autoIncrement: true }),
+export const webhookRegistries = pgTable("webhook_registries", {
+  id: serial("id").primaryKey(),
   webhookId: text("webhook_id")
     .notNull()
     .references(() => webhooks.id, { onDelete: "cascade" }),
   registryId: integer("registry_id")
     .notNull()
     .references(() => registries.id, { onDelete: "cascade" }),
-  createdAt: integer("created_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
-export const webhookDeliveries = sqliteTable("webhook_deliveries", {
-  id: integer("id").primaryKey({ autoIncrement: true }),
+export const webhookDeliveries = pgTable("webhook_deliveries", {
+  id: serial("id").primaryKey(),
   webhookId: text("webhook_id")
     .notNull()
     .references(() => webhooks.id, { onDelete: "cascade" }),
@@ -221,31 +188,27 @@ export const webhookDeliveries = sqliteTable("webhook_deliveries", {
   // Timing
   attemptCount: integer("attempt_count").notNull().default(0),
   maxAttempts: integer("max_attempts").notNull().default(3),
-  nextRetryAt: integer("next_retry_at", { mode: "timestamp" }),
-  deliveredAt: integer("delivered_at", { mode: "timestamp" }),
+  nextRetryAt: timestamp("next_retry_at"),
+  deliveredAt: timestamp("delivered_at"),
   // Timestamps
-  createdAt: integer("created_at", { mode: "timestamp" })
-    .notNull()
-    .$defaultFn(() => new Date()),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
 // ============================================
 // Pinned Registries Schema
 // ============================================
 
-export const pinnedRegistries = sqliteTable(
+export const pinnedRegistries = pgTable(
   "pinned_registries",
   {
-    id: integer("id").primaryKey({ autoIncrement: true }),
+    id: serial("id").primaryKey(),
     userId: text("user_id")
       .notNull()
       .references(() => user.id, { onDelete: "cascade" }),
     registryId: integer("registry_id")
       .notNull()
       .references(() => registries.id, { onDelete: "cascade" }),
-    createdAt: integer("created_at", { mode: "timestamp" })
-      .notNull()
-      .$defaultFn(() => new Date()),
+    createdAt: timestamp("created_at").notNull().defaultNow(),
   },
   (table) => [
     uniqueIndex("pinned_registries_user_registry_idx").on(

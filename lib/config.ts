@@ -14,5 +14,5 @@ export const RSS_URLS = [
   "/registry/feed.xml",
 ];
 
-export const STILL_UPDATED_DAYS = 30;
+export const STILL_UPDATED_DAYS = 365;
 export const CACHE_TTL = 60 * 5; // 1 day

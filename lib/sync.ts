@@ -6,7 +6,7 @@ import { REGISTRIES_URL, RSS_URLS } from "./config";
 import { notifyRegistryUpdate } from "./webhook-delivery";
 
 const CONCURRENCY = 10;
-const DISCOVERY_TIMEOUT = 2000;
+const DISCOVERY_TIMEOUT = 10000;
 const FETCH_TIMEOUT = 5000;
 
 type RemoteRegistry = {
@@ -84,7 +84,7 @@ export async function syncRegistries(): Promise<{
  */
 async function discoverRssUrl(baseUrl: string): Promise<string | null> {
   const urls = RSS_URLS.map(
-    (path) => `${baseUrl.replace(/\/+$/, "")}/${path.replace(/^\/+/, "")}`
+    (path) => `${baseUrl.replace(/\/+$/, "")}/${path.replace(/^\/+/, "")}`,
   );
 
   const results = await Promise.allSettled(
@@ -96,7 +96,7 @@ async function discoverRssUrl(baseUrl: string): Promise<string | null> {
       });
       if (response.ok) return url;
       throw new Error("Not found");
-    })
+    }),
   );
 
   for (const result of results) {
@@ -163,8 +163,8 @@ export async function processRegistryRss(registry: RegistryRecord): Promise<{
     items.length > 0
       ? new Date(
           Math.max(
-            ...items.map((item: RssItem) => new Date(item.pubDate).getTime())
-          )
+            ...items.map((item: RssItem) => new Date(item.pubDate).getTime()),
+          ),
         )
       : null;
 
@@ -177,7 +177,7 @@ export async function processRegistryRss(registry: RegistryRecord): Promise<{
 
   // Find new items
   const newItems = items.filter(
-    (item: RssItem) => !existingGuids.has(item.guid || item.link || "")
+    (item: RssItem) => !existingGuids.has(item.guid || item.link || ""),
   );
 
   // Update registry
@@ -227,7 +227,7 @@ export async function processRegistryRss(registry: RegistryRecord): Promise<{
       } catch (error) {
         console.error(
           `Failed to notify webhooks for registry ${registry.name}:`,
-          error
+          error,
         );
       }
     }
@@ -246,7 +246,7 @@ export async function processRegistryRss(registry: RegistryRecord): Promise<{
 async function processInBatches<T, R>(
   items: T[],
   processor: (item: T) => Promise<R>,
-  concurrency: number
+  concurrency: number,
 ): Promise<R[]> {
   const results: R[] = [];
 
@@ -289,7 +289,7 @@ export async function syncRssFeeds(): Promise<{
         return { hasFeed: false, itemCount: 0, newItemCount: 0, error: true };
       }
     },
-    CONCURRENCY
+    CONCURRENCY,
   );
 
   for (const result of results) {
