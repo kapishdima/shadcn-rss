@@ -79,6 +79,7 @@ export const registries = pgTable(
     logo: text("logo").default(""),
     // Status
     isActive: boolean("is_active").notNull().default(true),
+    isFeatured: boolean("is_featured").default(false),
     // RSS feed information
     hasFeed: boolean("has_feed").default(false),
     rssUrl: text("rss_url"),

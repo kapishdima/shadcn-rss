@@ -3,7 +3,7 @@
 import { db, schema } from "@/db";
 import { Registry, RssItem } from "@/types";
 import { isWithinInterval, sub } from "date-fns";
-import { desc, and, eq, inArray } from "drizzle-orm";
+import { desc, and, eq, inArray, not } from "drizzle-orm";
 import { STILL_UPDATED_DAYS } from "./config";
 import { normalizeQuery } from "@/utils/strings";
 
@@ -69,6 +69,7 @@ function toRegistry(
     rssUrl: dbRegistry.rssUrl,
     latestItems,
     updatedAt: dbRegistry.updatedAt,
+    isFeatured: dbRegistry.isFeatured ?? false,
     story: story
       ? {
           year: story.year,
@@ -85,13 +86,18 @@ function toRegistry(
 }
 
 /**
- * Get all active registries from database with their RSS items
+ * Get all active non-featured registries from database with their RSS items
  */
 export async function getRegistries(): Promise<Registry[]> {
   const dbRegistries = await db
     .select()
     .from(schema.registries)
-    .where(eq(schema.registries.isActive, true));
+    .where(
+      and(
+        eq(schema.registries.isActive, true),
+        not(eq(schema.registries.isFeatured, true))
+      )
+    );
 
   const registries = await Promise.all(
     dbRegistries.map(async (dbRegistry) => {
@@ -130,6 +136,46 @@ export async function getRegistriesByIds(ids: number[]): Promise<Registry[]> {
       and(
         eq(schema.registries.isActive, true),
         inArray(schema.registries.id, ids)
+      )
+    );
+
+  const registries = await Promise.all(
+    dbRegistries.map(async (dbRegistry) => {
+      const rssItems = await db
+        .select()
+        .from(schema.rssItems)
+        .where(eq(schema.rssItems.registryId, dbRegistry.id))
+        .orderBy(desc(schema.rssItems.pubDate));
+
+      const stories = await db
+        .select()
+        .from(schema.registryStories)
+        .where(
+          and(
+            eq(schema.registryStories.registryId, dbRegistry.id),
+            eq(schema.registryStories.year, 2025)
+          )
+        )
+        .limit(1);
+
+      return toRegistry(dbRegistry, rssItems, stories[0]);
+    })
+  );
+
+  return registries;
+}
+
+/**
+ * Get featured registries (official shadcn/ui registry)
+ */
+export async function getFeaturedRegistries(): Promise<Registry[]> {
+  const dbRegistries = await db
+    .select()
+    .from(schema.registries)
+    .where(
+      and(
+        eq(schema.registries.isActive, true),
+        eq(schema.registries.isFeatured, true)
       )
     );
 

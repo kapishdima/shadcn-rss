@@ -24,6 +24,7 @@ export type Registry = {
   rssUrl?: string | null;
   latestItems?: RssItem[] | null;
   updatedAt?: Date | null;
+  isFeatured?: boolean;
   story?: RegistryStoryStats | null;
 };
 

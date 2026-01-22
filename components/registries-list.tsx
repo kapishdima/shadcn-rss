@@ -19,13 +19,16 @@ import {
 import { RegistryCard } from "./registry-card";
 import { SelectionBar } from "./selection-bar";
 import { usePinnedRegistries } from "@/hooks/use-pinned-registries";
+import { FeaturedRegistryCard } from "./featured-registry-card";
 
 type RegistriesListProps = {
   registries: Registry[];
+  featuredRegistries?: Registry[];
 };
 
 export const RegistriesList: React.FC<RegistriesListProps> = ({
   registries,
+  featuredRegistries = [],
 }) => {
   const {
     query,
@@ -46,7 +49,7 @@ export const RegistriesList: React.FC<RegistriesListProps> = ({
   } = usePinnedRegistries();
 
   const unpinnedRegistry = filteredRegistries.filter(
-    (registry) => !pins.find((pin) => pin.id === registry.id)
+    (registry) => !pins.find((pin) => pin.id === registry.id),
   );
 
   useEffect(() => {
@@ -140,6 +143,40 @@ export const RegistriesList: React.FC<RegistriesListProps> = ({
           )}
         </AnimatePresence>
 
+        {featuredRegistries.length > 0 && (
+          <div className="mb-8 pb-8 border-b">
+            <h4 className="pb-4 text-sm font-semibold text-muted-foreground">
+              Official
+            </h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-2">
+              {featuredRegistries.map((registry) => (
+                <motion.div
+                  key={registry.name}
+                  initial={{ opacity: 0, y: 24, scale: 0.96 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  transition={{
+                    opacity: { duration: 0.4, ease: [0.4, 0, 0.2, 1] },
+                    y: {
+                      type: "spring",
+                      stiffness: 300,
+                      damping: 25,
+                      mass: 0.9,
+                    },
+                    scale: { type: "spring", stiffness: 400, damping: 30 },
+                  }}
+                  whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+                >
+                  <FeaturedRegistryCard
+                    registry={registry}
+                    isSelected={selection.includes(registry.name)}
+                    onToggle={handleToggleSelection}
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        )}
+
         <AnimatePresence mode="popLayout">
           {pins?.length > 0 && (
             <motion.div
@@ -167,7 +204,7 @@ export const RegistriesList: React.FC<RegistriesListProps> = ({
                 transition={{ duration: 0.3, delay: 0.1 }}
                 className="pb-4 text-sm font-semibold text-muted-foreground"
               >
-                Pins regisries
+                Pinned registries
               </motion.h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-2 ">
                 <AnimatePresence mode="popLayout">
@@ -238,7 +275,7 @@ export const RegistriesList: React.FC<RegistriesListProps> = ({
         <div
           className={cn(
             "grid grid-cols-1 md:grid-cols-2 gap-4 p-1 -m-1 transition-opacity duration-200",
-            isPinsLoading ? "opacity-0" : "opacity-100"
+            isPinsLoading ? "opacity-0" : "opacity-100",
           )}
         >
           <AnimatePresence mode="popLayout">

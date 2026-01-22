@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { revalidatePath } from "next/cache";
-import { syncRegistries } from "@/lib/sync";
+import { syncRegistries, syncOfficialRegistry } from "@/lib/sync";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
@@ -8,6 +8,13 @@ export const maxDuration = 60;
 export async function GET() {
   try {
     console.log("[Cron] Starting registries sync...");
+
+    // Sync official registry first
+    console.log("[Cron] Syncing official registry...");
+    const officialResult = await syncOfficialRegistry();
+    console.log("[Cron] Official registry sync complete:", officialResult);
+
+    // Sync community registries
     const result = await syncRegistries();
     console.log("[Cron] Registries sync complete:", result);
 
@@ -17,6 +24,7 @@ export async function GET() {
     return NextResponse.json({
       success: true,
       message: "Registries synced successfully",
+      official: officialResult,
       ...result,
     });
   } catch (error) {

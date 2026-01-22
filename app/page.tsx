@@ -7,13 +7,16 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { WhatsNew } from "@/components/whats-new";
 
-import { collectRssFeed } from "@/lib/data";
+import { collectRssFeed, collectFeaturedRegistries } from "@/lib/data";
 import { UserMenu } from "@/components/auth/user-menu";
 import { AnimateIcon } from "@/components/animate-ui/icons/icon";
 import { Wrapped } from "@/components/wrapped";
 
 export default async function Home() {
-  const registries = await collectRssFeed();
+  const [registries, featuredRegistries] = await Promise.all([
+    collectRssFeed(),
+    collectFeaturedRegistries(),
+  ]);
 
   return (
     <div className="flex min-h-screen items-center justify-center font-sans">
@@ -99,7 +102,10 @@ export default async function Home() {
 
         <WhatsNew position="bottom-left" />
 
-        <RegistriesPageContent registries={registries} />
+        <RegistriesPageContent
+          registries={registries}
+          featuredRegistries={featuredRegistries}
+        />
       </main>
     </div>
   );

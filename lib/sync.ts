@@ -2,7 +2,7 @@ import { XMLParser } from "fast-xml-parser";
 import { eq } from "drizzle-orm";
 import { db, schema } from "@/db";
 import { RssFeed, RssItem } from "@/types";
-import { REGISTRIES_URL, RSS_URLS } from "./config";
+import { REGISTRIES_URL, RSS_URLS, OFFICIAL_SHADCN_REGISTRY } from "./config";
 import { notifyRegistryUpdate } from "./webhook-delivery";
 
 const CONCURRENCY = 10;
@@ -308,5 +308,53 @@ export async function syncRssFeeds(): Promise<{
     itemsSynced,
     newItems,
     errors,
+  };
+}
+
+/**
+ * Sync official shadcn/ui registry (always featured)
+ */
+export async function syncOfficialRegistry(): Promise<{
+  synced: boolean;
+  hasFeed: boolean;
+  itemCount: number;
+}> {
+  const data = {
+    name: OFFICIAL_SHADCN_REGISTRY.name,
+    homepage: OFFICIAL_SHADCN_REGISTRY.homepage,
+    description: OFFICIAL_SHADCN_REGISTRY.description,
+    logo: OFFICIAL_SHADCN_REGISTRY.logo,
+    rssUrl: OFFICIAL_SHADCN_REGISTRY.rssUrl,
+    isFeatured: true,
+    fetchedAt: new Date(),
+  };
+
+  // Insert or update official registry
+  await db
+    .insert(schema.registries)
+    .values({ ...data, url: OFFICIAL_SHADCN_REGISTRY.url })
+    .onConflictDoUpdate({
+      target: schema.registries.url,
+      set: data,
+    });
+
+  // Get the registry record
+  const registries = await db
+    .select()
+    .from(schema.registries)
+    .where(eq(schema.registries.url, OFFICIAL_SHADCN_REGISTRY.url));
+
+  const registry = registries[0];
+  if (!registry) {
+    return { synced: false, hasFeed: false, itemCount: 0 };
+  }
+
+  // Process RSS feed
+  const result = await processRegistryRss(registry);
+
+  return {
+    synced: true,
+    hasFeed: result.hasFeed,
+    itemCount: result.itemCount,
   };
 }

@@ -3,7 +3,7 @@ import "server-only";
 import { Registry } from "@/types";
 import { getLocalStoragePins } from "@/lib/pins-client-utils";
 import { getPinnedRegistriesForUser } from "@/lib/pins";
-import { getRegistries } from "@/lib/registies";
+import { getRegistries, getFeaturedRegistries } from "@/lib/registies";
 import { getServerSession } from "./auth-server";
 
 /**
@@ -45,4 +45,13 @@ export async function getUnpinnedRegistries(): Promise<Registry[]> {
   const registries = await getRegistries();
 
   return sortRegistriesByDate(registries);
+}
+
+/**
+ * Get featured registries (official shadcn/ui registry)
+ */
+export async function collectFeaturedRegistries(): Promise<Registry[]> {
+  const registries = await getFeaturedRegistries();
+
+  return registries;
 }

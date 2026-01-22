@@ -8,6 +8,13 @@
       "when": 1768844789165,
       "tag": "0000_modern_the_leader",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1769107899968,
+      "tag": "0001_tired_leader",
+      "breakpoints": true
     }
   ]
 }

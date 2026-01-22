@@ -13,10 +13,12 @@ import { usePinnedRegistries } from "@/hooks/use-pinned-registries";
 
 type RegistriesPageContentProps = {
   registries: Registry[];
+  featuredRegistries?: Registry[];
 };
 
 export const RegistriesPageContent: React.FC<RegistriesPageContentProps> = ({
   registries,
+  featuredRegistries = [],
 }) => {
   const [view, setView] = useQueryState("view", { defaultValue: "registries" });
 
@@ -55,7 +57,12 @@ export const RegistriesPageContent: React.FC<RegistriesPageContentProps> = ({
         </Button>
       </div>
 
-      {view === "registries" && <RegistriesList registries={registries} />}
+      {view === "registries" && (
+        <RegistriesList
+          registries={registries}
+          featuredRegistries={featuredRegistries}
+        />
+      )}
       {view === "changes" && <LatestChangesList registries={registries} />}
       {view === "activity" && <ActivityGraph registries={registries} />}
     </div>
